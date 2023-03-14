@@ -1,0 +1,119 @@
+[2023-02-26 21:08:24.364] INFO [24920] - DMS呼叫演算法計算對應訂單批號配送商
+[2023-02-26 21:08:24.987] INFO [24920] - steps in db manager
+[2023-02-26 21:08:24.990] INFO [24920] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-26 21:08:25.027] INFO [24920] - steps in db manager
+[2023-02-26 21:08:25.030] INFO [24920] - message : conduct the sql => SELECT * FROM HOLIDAY
+[2023-02-26 21:08:25.043] INFO [24920] - steps in db manager
+[2023-02-26 21:08:25.045] INFO [24920] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-26 21:08:25.264] INFO [24920] - steps in db manager
+[2023-02-26 21:08:25.270] INFO [24920] - message : conduct the sql => EXEC DISTR_INFO
+[2023-02-26 21:08:25.326] INFO [24920] - steps in db manager
+[2023-02-26 21:08:25.330] INFO [24920] - message : conduct the sql => EXEC SHIPPER_INFO
+[2023-02-26 21:08:25.982] INFO [24920] - steps in db manager
+[2023-02-26 21:08:25.985] INFO [24920] - message : conduct the sql => SELECT * FROM ORDER_M WHERE BATCH_NO = 'EST_20220825_0826' AND RESEND_FLAG = 'Y'
+[2023-02-26 21:08:26.046] INFO [24920] - steps in db manager
+[2023-02-26 21:08:26.049] INFO [24920] - message : conduct the sql => SELECT *FROM ORDER_M WHERE CREATE_DT BETWEEN DATEADD(mm, DATEDIFF(mm,0,getdate()), 0) AND DATEADD(mm, 1, DATEADD(dd, -1, DATEADD(mm, DATEDIFF(mm,0,getdate()), 0)))
+[2023-02-26 21:08:26.655] INFO [24920] - steps in db manager
+[2023-02-26 21:08:26.658] INFO [24920] - message : conduct the sql => SELECT * FROM ORDER_D_EST_PACK
+[2023-02-26 21:08:26.803] INFO [24920] - Finish loading order information from DB
+[2023-02-26 21:08:26.810] WARNING [24920] - There is no computable data in this batch
+[2023-02-26 21:08:26.813] INFO [24920] - rule-based最適配送商演算法計算完成
+[2023-02-26 21:08:48.343] INFO [24920] - Start to write the result to database
+[2023-02-26 21:19:45.786] INFO [24920] - Finish writing the result to database
+[2023-02-26 21:19:45.805] INFO [24920] - rule-based and GA result
+[2023-02-26 21:20:06.157] INFO [24920] - DMS呼叫演算法計算對應訂單批號配送商
+[2023-02-26 21:20:06.189] INFO [24920] - steps in db manager
+[2023-02-26 21:20:06.191] INFO [24920] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-26 21:20:06.200] INFO [24920] - steps in db manager
+[2023-02-26 21:20:06.202] INFO [24920] - message : conduct the sql => SELECT * FROM HOLIDAY
+[2023-02-26 21:20:06.210] INFO [24920] - steps in db manager
+[2023-02-26 21:20:06.215] INFO [24920] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-26 21:20:06.309] INFO [24920] - steps in db manager
+[2023-02-26 21:20:06.311] INFO [24920] - message : conduct the sql => EXEC DISTR_INFO
+[2023-02-26 21:20:06.325] INFO [24920] - steps in db manager
+[2023-02-26 21:20:06.327] INFO [24920] - message : conduct the sql => EXEC SHIPPER_INFO
+[2023-02-26 21:20:06.355] INFO [24920] - steps in db manager
+[2023-02-26 21:20:06.358] INFO [24920] - message : conduct the sql => SELECT * FROM ORDER_M WHERE BATCH_NO = '20220825194001316' AND RESEND_FLAG = 'Y'
+[2023-02-26 21:20:06.382] INFO [24920] - steps in db manager
+[2023-02-26 21:20:06.385] INFO [24920] - message : conduct the sql => SELECT *FROM ORDER_M WHERE CREATE_DT BETWEEN DATEADD(mm, DATEDIFF(mm,0,getdate()), 0) AND DATEADD(mm, 1, DATEADD(dd, -1, DATEADD(mm, DATEDIFF(mm,0,getdate()), 0)))
+[2023-02-26 21:20:07.159] INFO [24920] - steps in db manager
+[2023-02-26 21:20:07.162] INFO [24920] - message : conduct the sql => SELECT * FROM ORDER_D_EST_PACK
+[2023-02-26 21:20:07.313] INFO [24920] - Finish loading order information from DB
+[2023-02-26 21:20:07.322] INFO [24920] - Start to shipper condition judgment
+[2023-02-26 21:20:07.721] INFO [24920] - Complete the basic field data capture
+[2023-02-26 21:20:07.726] INFO [24920] - Start Holiday Table Calculation
+[2023-02-26 21:20:07.807] INFO [24920] - Start filter out eligible distributors
+[2023-02-26 21:20:07.813] INFO [24920] - Choose a distributor by the lowest cost
+[2023-02-26 21:20:07.827] WARNING [24920] - There are 2 distributors with null values
+[2023-02-26 21:20:07.831] WARNING [24920] - The order number is as follows: ['S2022082511140', 'S2022082511141']
+[2023-02-26 21:20:07.834] INFO [24920] - Start adjusting the ratio of carriers
+[2023-02-26 21:20:09.256] INFO [24920] - Order Distribution Status Statistics
+[2023-02-26 21:20:09.263] INFO [24920] - 4.0:0.0
+[2023-02-26 21:20:09.269] INFO [24920] - 1.0:2.0
+[2023-02-26 21:20:09.274] INFO [24920] - 7.0:3.0
+[2023-02-26 21:20:09.278] INFO [24920] - 6.0:0.0
+[2023-02-26 21:20:09.285] INFO [24920] - 2.0:12.0
+[2023-02-26 21:20:09.296] INFO [24920] - 14.0:0.0
+[2023-02-26 21:20:09.301] INFO [24920] - 3.0:0.0
+[2023-02-26 21:20:09.306] INFO [24920] - 9.0:0.0
+[2023-02-26 21:20:09.309] INFO [24920] - rule-based最適配送商演算法計算完成
+[2023-02-26 21:20:19.670] INFO [24920] - Start to write the result to database
+[2023-02-26 21:27:55.681] INFO [24920] - Finish writing the result to database
+[2023-02-26 21:27:55.686] INFO [24920] - rule-based and GA result
+[2023-02-26 21:27:55.690] INFO [24920] -             BATCH_NO        ORDER_NO EST_DISTR_TYPE_ID                                  REMARK
+0  20220825194001316  S2022082511140                    Can not find the corresponding shipper
+1  20220825194001316  S2022082511141                    Can not find the corresponding shipper
+[2023-02-26 21:28:41.954] INFO [24920] - steps in db manager
+[2023-02-26 21:28:41.956] INFO [24920] - message : conduct the sql => SELECT * FROM ORDER_M WHERE SPECIFY_DISTR = '' and EST_DISTR_TYPE_ID IS NULL;
+[2023-02-26 21:29:48.931] INFO [24920] - steps in db manager
+[2023-02-26 21:29:48.933] INFO [24920] - message : conduct the sql => SELECT * FROM ORDER_M WHERE SPECIFY_DISTR = '' and EST_DISTR_TYPE_ID IS NULL;
+[2023-02-26 21:29:56.335] INFO [24920] - steps in db manager
+[2023-02-26 21:29:56.341] INFO [24920] - message : conduct the sql => SELECT * FROM ORDER_M WHERE SPECIFY_DISTR = '' and EST_DISTR_TYPE_ID IS NULL;
+[2023-02-26 21:31:25.135] INFO [24920] - steps in db manager
+[2023-02-26 21:31:25.137] INFO [24920] - message : conduct the sql => SELECT * FROM ORDER_M WHERE SPECIFY_DISTR = '' and EST_DISTR_TYPE_ID IS NULL;
+[2023-02-26 21:35:44.251] INFO [24920] - steps in db manager
+[2023-02-26 21:35:44.256] INFO [24920] - message : conduct the sql => SELECT * FROM ORDER_M WHERE SPECIFY_DISTR = '' and EST_DISTR_TYPE_ID IS NULL and REMARK = '';
+[2023-02-26 21:36:14.736] INFO [24920] - steps in db manager
+[2023-02-26 21:36:14.738] INFO [24920] - message : conduct the sql => SELECT * FROM ORDER_M WHERE SPECIFY_DISTR = '' and EST_DISTR_TYPE_ID IS NULL and REMARK = '';
+[2023-02-26 23:59:37.915] INFO [24920] - DMS呼叫演算法計算對應訂單批號配送商
+[2023-02-26 23:59:38.251] INFO [24920] - steps in db manager
+[2023-02-26 23:59:38.254] INFO [24920] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-26 23:59:38.268] INFO [24920] - steps in db manager
+[2023-02-26 23:59:38.271] INFO [24920] - message : conduct the sql => SELECT * FROM HOLIDAY
+[2023-02-26 23:59:38.280] INFO [24920] - steps in db manager
+[2023-02-26 23:59:38.282] INFO [24920] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-26 23:59:38.644] INFO [24920] - steps in db manager
+[2023-02-26 23:59:38.648] INFO [24920] - message : conduct the sql => EXEC DISTR_INFO
+[2023-02-26 23:59:38.752] INFO [24920] - steps in db manager
+[2023-02-26 23:59:38.756] INFO [24920] - message : conduct the sql => EXEC SHIPPER_INFO
+[2023-02-26 23:59:39.652] INFO [24920] - steps in db manager
+[2023-02-26 23:59:39.655] INFO [24920] - message : conduct the sql => SELECT * FROM ORDER_M WHERE BATCH_NO = '20220825204000857' AND RESEND_FLAG = 'Y'
+[2023-02-26 23:59:39.692] INFO [24920] - steps in db manager
+[2023-02-26 23:59:39.695] INFO [24920] - message : conduct the sql => SELECT *FROM ORDER_M WHERE CREATE_DT BETWEEN DATEADD(mm, DATEDIFF(mm,0,getdate()), 0) AND DATEADD(mm, 1, DATEADD(dd, -1, DATEADD(mm, DATEDIFF(mm,0,getdate()), 0)))
+[2023-02-26 23:59:40.237] INFO [24920] - steps in db manager
+[2023-02-26 23:59:40.239] INFO [24920] - message : conduct the sql => SELECT * FROM ORDER_D_EST_PACK
+[2023-02-26 23:59:40.372] INFO [24920] - Finish loading order information from DB
+[2023-02-26 23:59:40.377] INFO [24920] - Start to shipper condition judgment
+[2023-02-26 23:59:40.705] INFO [24920] - Complete the basic field data capture
+[2023-02-26 23:59:40.709] INFO [24920] - Start Holiday Table Calculation
+[2023-02-26 23:59:40.780] INFO [24920] - Start filter out eligible distributors
+[2023-02-26 23:59:40.784] INFO [24920] - Choose a distributor by the lowest cost
+[2023-02-26 23:59:40.799] WARNING [24920] - There are 2 distributors with null values
+[2023-02-26 23:59:40.804] WARNING [24920] - The order number is as follows: ['S2022082511435', 'S2022082511436']
+[2023-02-26 23:59:40.809] INFO [24920] - Start adjusting the ratio of carriers
+[2023-02-26 23:59:41.174] INFO [24920] - Order Distribution Status Statistics
+[2023-02-26 23:59:41.179] INFO [24920] - 4.0:0.0
+[2023-02-26 23:59:41.184] INFO [24920] - 1.0:2.0
+[2023-02-26 23:59:41.188] INFO [24920] - 7.0:3.0
+[2023-02-26 23:59:41.197] INFO [24920] - 6.0:0.0
+[2023-02-26 23:59:41.202] INFO [24920] - 2.0:12.0
+[2023-02-26 23:59:41.211] INFO [24920] - 14.0:0.0
+[2023-02-26 23:59:41.215] INFO [24920] - 3.0:0.0
+[2023-02-26 23:59:41.220] INFO [24920] - 9.0:0.0
+[2023-02-26 23:59:41.231] INFO [24920] - rule-based最適配送商演算法計算完成
+[2023-02-26 23:59:41.239] INFO [24920] - Start to write the result to database
+[2023-02-26 23:59:41.336] INFO [24920] - Finish writing the result to database
+[2023-02-26 23:59:41.340] INFO [24920] - rule-based and GA result
+[2023-02-26 23:59:41.345] INFO [24920] -             BATCH_NO        ORDER_NO EST_DISTR_TYPE_ID                                  REMARK
+0  20220825204000857  S2022082511435                    Can not find the corresponding shipper
+1  20220825204000857  S2022082511436                    Can not find the corresponding shipper

@@ -1,0 +1,14 @@
+numpy
+pandas
+tqdm
+xlrd
+openpyxl
+pymssql
+DBUtils
+uvicorn
+requests
+fastapi
+fastapi_login
+starlette
+pydantic
+scikit-learn

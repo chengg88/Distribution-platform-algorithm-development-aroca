@@ -1,0 +1,14 @@
+@startuml
+
+(*) --> "當日隔日邏輯判斷"
+
+if "" then
+  -->[當日] "Some Activity"
+  --> "Another activity"
+  -right-> (*)
+else
+  ->[隔日] "Something else"
+  -->[Ending process] (*)
+endif
+
+@enduml

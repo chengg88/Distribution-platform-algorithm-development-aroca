@@ -1,0 +1,1156 @@
+[2023-02-28 16:09:30.028] INFO [19924] - DMS呼叫演算法計算對應訂單批號配送商
+[2023-02-28 16:09:30.679] INFO [19924] - steps in db manager
+[2023-02-28 16:09:30.682] INFO [19924] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 16:09:30.715] INFO [19924] - steps in db manager
+[2023-02-28 16:09:30.718] INFO [19924] - message : conduct the sql => SELECT * FROM HOLIDAY
+[2023-02-28 16:09:30.731] INFO [19924] - steps in db manager
+[2023-02-28 16:09:30.733] INFO [19924] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 16:09:31.034] INFO [19924] - steps in db manager
+[2023-02-28 16:09:31.037] INFO [19924] - message : conduct the sql => EXEC DISTR_INFO
+[2023-02-28 16:09:31.123] INFO [19924] - steps in db manager
+[2023-02-28 16:09:31.126] INFO [19924] - message : conduct the sql => EXEC SHIPPER_INFO
+[2023-02-28 16:09:32.305] INFO [19924] - steps in db manager
+[2023-02-28 16:09:32.307] INFO [19924] - message : conduct the sql => SELECT * FROM ORDER_M WHERE BATCH_NO = '202208251335' AND RESEND_FLAG = 'Y'
+[2023-02-28 16:09:32.349] INFO [19924] - steps in db manager
+[2023-02-28 16:09:32.351] INFO [19924] - message : conduct the sql => SELECT *FROM ORDER_M WHERE CREATE_DT BETWEEN DATEADD(mm, DATEDIFF(mm,0,getdate()), 0) AND DATEADD(mm, 1, DATEADD(dd, -1, DATEADD(mm, DATEDIFF(mm,0,getdate()), 0)))
+[2023-02-28 16:09:32.868] INFO [19924] - steps in db manager
+[2023-02-28 16:09:32.871] INFO [19924] - message : conduct the sql => SELECT * FROM ORDER_D_EST_PACK
+[2023-02-28 16:09:33.218] INFO [19924] - Finish loading order information from DB
+[2023-02-28 16:09:33.223] INFO [19924] - Start to shipper condition judgment
+[2023-02-28 16:09:33.857] INFO [19924] - Complete the basic field data capture
+[2023-02-28 16:09:33.863] INFO [19924] - Start Holiday Table Calculation
+[2023-02-28 16:09:33.928] INFO [19924] - Start filter out eligible distributors
+[2023-02-28 16:09:34.330] INFO [19924] - Choose a distributor by the lowest cost
+[2023-02-28 16:09:35.269] INFO [19924] - Start adjusting the ratio of carriers
+[2023-02-28 16:09:35.512] INFO [19924] - 變更配送商：4.0
+[2023-02-28 16:09:35.515] INFO [19924] - 變更訂單數量：0
+[2023-02-28 16:09:35.530] INFO [19924] - 變更配送商：1.0
+[2023-02-28 16:09:35.535] INFO [19924] - 變更訂單數量：0
+[2023-02-28 16:09:35.556] INFO [19924] - 變更配送商：7.0
+[2023-02-28 16:09:35.561] INFO [19924] - 變更訂單數量：0
+[2023-02-28 16:09:35.577] INFO [19924] - 變更配送商：6.0
+[2023-02-28 16:09:35.586] INFO [19924] - 變更訂單數量：0
+[2023-02-28 16:09:35.606] INFO [19924] - 變更配送商：14.0
+[2023-02-28 16:09:35.614] INFO [19924] - 變更訂單數量：0
+[2023-02-28 16:09:35.948] INFO [19924] - 變更配送商：3.0
+[2023-02-28 16:09:35.951] INFO [19924] - 變更訂單數量：1
+[2023-02-28 16:09:35.992] INFO [19924] - Order Distribution Status Statistics
+[2023-02-28 16:09:35.996] INFO [19924] - 4.0:0.0
+[2023-02-28 16:09:36.001] INFO [19924] - 1.0:2.0
+[2023-02-28 16:09:36.008] INFO [19924] - 7.0:3.0
+[2023-02-28 16:09:36.012] INFO [19924] - 6.0:0.0
+[2023-02-28 16:09:36.016] INFO [19924] - 2.0:13.0
+[2023-02-28 16:09:36.023] INFO [19924] - 14.0:0.0
+[2023-02-28 16:09:36.029] INFO [19924] - 3.0:23.0
+[2023-02-28 16:09:36.032] INFO [19924] - 9.0:0.0
+[2023-02-28 16:09:36.034] INFO [19924] - rule-based最適配送商演算法計算完成
+[2023-02-28 16:09:36.080] INFO [19924] - steps in db manager
+[2023-02-28 16:09:36.082] INFO [19924] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 16:09:36.120] INFO [19924] - steps in db manager
+[2023-02-28 16:09:36.122] INFO [19924] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 16:12:38.491] INFO [19924] - Start to write the result to database
+[2023-02-28 16:12:38.764] INFO [19924] - Finish writing the result to database
+[2023-02-28 16:12:38.770] INFO [19924] - rule-based and GA result
+[2023-02-28 16:12:44.775] INFO [19924] - DMS呼叫演算法計算對應訂單批號配送商
+[2023-02-28 16:12:44.803] INFO [19924] - steps in db manager
+[2023-02-28 16:12:44.805] INFO [19924] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 16:12:44.814] INFO [19924] - steps in db manager
+[2023-02-28 16:12:44.816] INFO [19924] - message : conduct the sql => SELECT * FROM HOLIDAY
+[2023-02-28 16:12:44.823] INFO [19924] - steps in db manager
+[2023-02-28 16:12:44.825] INFO [19924] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 16:12:44.919] INFO [19924] - steps in db manager
+[2023-02-28 16:12:44.921] INFO [19924] - message : conduct the sql => EXEC DISTR_INFO
+[2023-02-28 16:12:44.941] INFO [19924] - steps in db manager
+[2023-02-28 16:12:44.942] INFO [19924] - message : conduct the sql => EXEC SHIPPER_INFO
+[2023-02-28 16:12:44.962] INFO [19924] - steps in db manager
+[2023-02-28 16:12:44.965] INFO [19924] - message : conduct the sql => SELECT * FROM ORDER_M WHERE BATCH_NO = '202208251335' AND RESEND_FLAG = 'Y'
+[2023-02-28 16:12:44.993] INFO [19924] - steps in db manager
+[2023-02-28 16:12:45.004] INFO [19924] - message : conduct the sql => SELECT *FROM ORDER_M WHERE CREATE_DT BETWEEN DATEADD(mm, DATEDIFF(mm,0,getdate()), 0) AND DATEADD(mm, 1, DATEADD(dd, -1, DATEADD(mm, DATEDIFF(mm,0,getdate()), 0)))
+[2023-02-28 16:12:45.454] INFO [19924] - steps in db manager
+[2023-02-28 16:12:45.457] INFO [19924] - message : conduct the sql => SELECT * FROM ORDER_D_EST_PACK
+[2023-02-28 16:12:45.734] INFO [19924] - Finish loading order information from DB
+[2023-02-28 16:12:45.742] INFO [19924] - Start to shipper condition judgment
+[2023-02-28 16:12:46.368] INFO [19924] - Complete the basic field data capture
+[2023-02-28 16:12:46.376] INFO [19924] - Start Holiday Table Calculation
+[2023-02-28 16:12:46.441] INFO [19924] - Start filter out eligible distributors
+[2023-02-28 16:12:46.841] INFO [19924] - Choose a distributor by the lowest cost
+[2023-02-28 16:12:47.796] INFO [19924] - Start adjusting the ratio of carriers
+[2023-02-28 16:12:48.053] INFO [19924] - 變更配送商：4.0
+[2023-02-28 16:12:48.057] INFO [19924] - 變更訂單數量：0
+[2023-02-28 16:12:48.079] INFO [19924] - 變更配送商：1.0
+[2023-02-28 16:12:48.082] INFO [19924] - 變更訂單數量：0
+[2023-02-28 16:12:48.104] INFO [19924] - 變更配送商：7.0
+[2023-02-28 16:12:48.112] INFO [19924] - 變更訂單數量：0
+[2023-02-28 16:12:48.143] INFO [19924] - 變更配送商：6.0
+[2023-02-28 16:12:48.145] INFO [19924] - 變更訂單數量：0
+[2023-02-28 16:12:48.162] INFO [19924] - 變更配送商：14.0
+[2023-02-28 16:12:48.173] INFO [19924] - 變更訂單數量：0
+[2023-02-28 16:12:48.464] INFO [19924] - 變更配送商：3.0
+[2023-02-28 16:12:48.473] INFO [19924] - 變更訂單數量：1
+[2023-02-28 16:12:48.511] INFO [19924] - Order Distribution Status Statistics
+[2023-02-28 16:12:48.513] INFO [19924] - 4.0:0.0
+[2023-02-28 16:12:48.519] INFO [19924] - 1.0:2.0
+[2023-02-28 16:12:48.522] INFO [19924] - 7.0:3.0
+[2023-02-28 16:12:48.526] INFO [19924] - 6.0:0.0
+[2023-02-28 16:12:48.535] INFO [19924] - 2.0:13.0
+[2023-02-28 16:12:48.541] INFO [19924] - 14.0:0.0
+[2023-02-28 16:12:48.546] INFO [19924] - 3.0:23.0
+[2023-02-28 16:12:48.550] INFO [19924] - 9.0:0.0
+[2023-02-28 16:12:48.554] INFO [19924] - rule-based最適配送商演算法計算完成
+[2023-02-28 16:12:48.599] INFO [19924] - steps in db manager
+[2023-02-28 16:12:48.601] INFO [19924] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 16:12:48.632] INFO [19924] - steps in db manager
+[2023-02-28 16:12:48.634] INFO [19924] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 16:17:25.592] INFO [19924] - Start to write the result to database
+[2023-02-28 16:17:26.522] INFO [19924] - Finish writing the result to database
+[2023-02-28 16:17:26.528] INFO [19924] - rule-based and GA result
+[2023-02-28 16:50:22.912] INFO [24684] - DMS呼叫演算法計算對應訂單批號配送商
+[2023-02-28 16:50:23.438] INFO [24684] - steps in db manager
+[2023-02-28 16:50:23.440] INFO [24684] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 16:50:23.447] INFO [24684] - steps in db manager
+[2023-02-28 16:50:23.448] INFO [24684] - message : conduct the sql => SELECT * FROM HOLIDAY
+[2023-02-28 16:50:23.453] INFO [24684] - steps in db manager
+[2023-02-28 16:50:23.455] INFO [24684] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 16:50:23.538] INFO [24684] - steps in db manager
+[2023-02-28 16:50:23.539] INFO [24684] - message : conduct the sql => EXEC DISTR_INFO
+[2023-02-28 16:50:23.550] INFO [24684] - steps in db manager
+[2023-02-28 16:50:23.552] INFO [24684] - message : conduct the sql => EXEC SHIPPER_INFO
+[2023-02-28 16:50:23.585] INFO [24684] - steps in db manager
+[2023-02-28 16:50:23.587] INFO [24684] - message : conduct the sql => SELECT * FROM ORDER_M WHERE BATCH_NO = '202209230645' AND RESEND_FLAG = 'Y'
+[2023-02-28 16:50:23.617] INFO [24684] - steps in db manager
+[2023-02-28 16:50:23.619] INFO [24684] - message : conduct the sql => SELECT *FROM ORDER_M WHERE CREATE_DT BETWEEN DATEADD(mm, DATEDIFF(mm,0,getdate()), 0) AND DATEADD(mm, 1, DATEADD(dd, -1, DATEADD(mm, DATEDIFF(mm,0,getdate()), 0)))
+[2023-02-28 16:50:24.094] INFO [24684] - steps in db manager
+[2023-02-28 16:50:24.096] INFO [24684] - message : conduct the sql => SELECT * FROM ORDER_D_EST_PACK
+[2023-02-28 16:50:25.152] INFO [24684] - Finish loading order information from DB
+[2023-02-28 16:50:25.156] INFO [24684] - Start to shipper condition judgment
+[2023-02-28 16:50:26.633] INFO [24684] - Complete the basic field data capture
+[2023-02-28 16:50:26.637] INFO [24684] - Start Holiday Table Calculation
+[2023-02-28 16:50:26.672] INFO [24684] - Start filter out eligible distributors
+[2023-02-28 16:50:27.817] INFO [24684] - Choose a distributor by the lowest cost
+[2023-02-28 16:50:31.563] INFO [24684] - Start adjusting the ratio of carriers
+[2023-02-28 16:50:31.746] INFO [24684] - 變更配送商：4.0
+[2023-02-28 16:50:31.753] INFO [24684] - 變更訂單數量：0
+[2023-02-28 16:50:31.778] INFO [24684] - 變更配送商：1.0
+[2023-02-28 16:50:31.789] INFO [24684] - 變更訂單數量：0
+[2023-02-28 16:50:31.829] INFO [24684] - 變更配送商：7.0
+[2023-02-28 16:50:31.834] INFO [24684] - 變更訂單數量：0
+[2023-02-28 16:50:31.879] INFO [24684] - 變更配送商：6.0
+[2023-02-28 16:50:31.887] INFO [24684] - 變更訂單數量：0
+[2023-02-28 16:50:31.935] INFO [24684] - 變更配送商：14.0
+[2023-02-28 16:50:31.962] INFO [24684] - 變更訂單數量：0
+[2023-02-28 16:50:34.140] INFO [24684] - 變更配送商：3.0
+[2023-02-28 16:50:34.142] INFO [24684] - 變更訂單數量：48
+[2023-02-28 16:50:34.167] INFO [24684] - Order Distribution Status Statistics
+[2023-02-28 16:50:34.172] INFO [24684] - 4.0:0.0
+[2023-02-28 16:50:34.176] INFO [24684] - 1.0:2.0
+[2023-02-28 16:50:34.179] INFO [24684] - 7.0:3.0
+[2023-02-28 16:50:34.183] INFO [24684] - 6.0:0.0
+[2023-02-28 16:50:34.187] INFO [24684] - 2.0:60.0
+[2023-02-28 16:50:34.197] INFO [24684] - 14.0:0.0
+[2023-02-28 16:50:34.232] INFO [24684] - 3.0:131.0
+[2023-02-28 16:50:34.238] INFO [24684] - 9.0:0.0
+[2023-02-28 16:50:34.242] INFO [24684] - rule-based最適配送商演算法計算完成
+[2023-02-28 16:50:34.272] INFO [24684] - steps in db manager
+[2023-02-28 16:50:34.276] INFO [24684] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 16:50:34.293] INFO [24684] - steps in db manager
+[2023-02-28 16:50:34.295] INFO [24684] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 16:56:30.757] INFO [24684] - Start to write the result to database
+[2023-02-28 16:56:31.673] INFO [24684] - Finish writing the result to database
+[2023-02-28 16:56:31.678] INFO [24684] - rule-based and GA result
+[2023-02-28 16:56:31.682] INFO [24684] -          BATCH_NO        ORDER_NO EST_DISTR_TYPE_ID  EST_DISTR_TYPE_ID(GA_result) REMARK
+0    202209230645  S2022092310295                 9                             9       
+1    202209230645  S2022092310296                 9                             9       
+2    202209230645  S2022092310297                 9                            18       
+3    202209230645  S2022092310298                 9                             9       
+4    202209230645  S2022092310304                 9                             8       
+..            ...             ...               ...                           ...    ...
+174  202209230645  S2022092310833                 8                             8       
+175  202209230645  S2022092310836                 8                             8       
+176  202209230645  S2022092310841                 8                             8       
+177  202209230645  S2022092310845                 8                             8       
+178  202209230645  S2022092310846                 8                             8       
+
+[179 rows x 5 columns]
+[2023-02-28 17:03:11.418] INFO [22720] - DMS呼叫演算法計算對應訂單批號配送商
+[2023-02-28 17:03:11.494] INFO [22720] - steps in db manager
+[2023-02-28 17:03:11.496] INFO [22720] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 17:03:11.506] INFO [22720] - steps in db manager
+[2023-02-28 17:03:11.508] INFO [22720] - message : conduct the sql => SELECT * FROM HOLIDAY
+[2023-02-28 17:03:11.520] INFO [22720] - steps in db manager
+[2023-02-28 17:03:11.524] INFO [22720] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 17:03:11.622] INFO [22720] - steps in db manager
+[2023-02-28 17:03:11.626] INFO [22720] - message : conduct the sql => EXEC DISTR_INFO
+[2023-02-28 17:03:11.640] INFO [22720] - steps in db manager
+[2023-02-28 17:03:11.642] INFO [22720] - message : conduct the sql => EXEC SHIPPER_INFO
+[2023-02-28 17:03:11.676] INFO [22720] - steps in db manager
+[2023-02-28 17:03:11.692] INFO [22720] - message : conduct the sql => SELECT * FROM ORDER_M WHERE BATCH_NO = '202209230645' AND RESEND_FLAG = 'Y'
+[2023-02-28 17:03:11.712] INFO [22720] - steps in db manager
+[2023-02-28 17:03:11.715] INFO [22720] - message : conduct the sql => SELECT *FROM ORDER_M WHERE CREATE_DT BETWEEN DATEADD(mm, DATEDIFF(mm,0,getdate()), 0) AND DATEADD(mm, 1, DATEADD(dd, -1, DATEADD(mm, DATEDIFF(mm,0,getdate()), 0)))
+[2023-02-28 17:03:12.130] INFO [22720] - steps in db manager
+[2023-02-28 17:03:12.133] INFO [22720] - message : conduct the sql => SELECT * FROM ORDER_D_EST_PACK
+[2023-02-28 17:03:13.069] INFO [22720] - Finish loading order information from DB
+[2023-02-28 17:03:13.073] INFO [22720] - Start to shipper condition judgment
+[2023-02-28 17:03:14.427] INFO [22720] - Complete the basic field data capture
+[2023-02-28 17:03:14.433] INFO [22720] - Start Holiday Table Calculation
+[2023-02-28 17:03:14.470] INFO [22720] - Start filter out eligible distributors
+[2023-02-28 17:03:16.047] INFO [22720] - Choose a distributor by the lowest cost
+[2023-02-28 17:03:19.765] INFO [22720] - Start adjusting the ratio of carriers
+[2023-02-28 17:03:19.902] INFO [22720] - 變更配送商：4.0
+[2023-02-28 17:03:19.907] INFO [22720] - 變更訂單數量：0
+[2023-02-28 17:03:19.931] INFO [22720] - 變更配送商：1.0
+[2023-02-28 17:03:19.933] INFO [22720] - 變更訂單數量：0
+[2023-02-28 17:03:19.955] INFO [22720] - 變更配送商：7.0
+[2023-02-28 17:03:19.959] INFO [22720] - 變更訂單數量：0
+[2023-02-28 17:03:19.986] INFO [22720] - 變更配送商：6.0
+[2023-02-28 17:03:19.991] INFO [22720] - 變更訂單數量：0
+[2023-02-28 17:03:20.014] INFO [22720] - 變更配送商：14.0
+[2023-02-28 17:03:20.018] INFO [22720] - 變更訂單數量：0
+[2023-02-28 17:03:21.971] INFO [22720] - 變更配送商：3.0
+[2023-02-28 17:03:21.973] INFO [22720] - 變更訂單數量：48
+[2023-02-28 17:03:21.995] INFO [22720] - Order Distribution Status Statistics
+[2023-02-28 17:03:22.003] INFO [22720] - 4.0:0.0
+[2023-02-28 17:03:22.017] INFO [22720] - 1.0:2.0
+[2023-02-28 17:03:22.019] INFO [22720] - 7.0:3.0
+[2023-02-28 17:03:22.022] INFO [22720] - 6.0:0.0
+[2023-02-28 17:03:22.025] INFO [22720] - 2.0:60.0
+[2023-02-28 17:03:22.035] INFO [22720] - 14.0:0.0
+[2023-02-28 17:03:22.038] INFO [22720] - 3.0:131.0
+[2023-02-28 17:03:22.040] INFO [22720] - 9.0:0.0
+[2023-02-28 17:03:22.043] INFO [22720] - rule-based最適配送商演算法計算完成
+[2023-02-28 17:03:22.077] INFO [22720] - steps in db manager
+[2023-02-28 17:03:22.079] INFO [22720] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 17:03:22.097] INFO [22720] - steps in db manager
+[2023-02-28 17:03:22.098] INFO [22720] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 17:15:58.204] INFO [22720] - Start to write the result to database
+[2023-02-28 17:15:59.047] INFO [22720] - Finish writing the result to database
+[2023-02-28 17:15:59.051] INFO [22720] - rule-based and GA result
+[2023-02-28 17:15:59.059] INFO [22720] -          BATCH_NO        ORDER_NO EST_DISTR_TYPE_ID  EST_DISTR_TYPE_ID(GA_result) REMARK
+0    202209230645  S2022092310295                 9                            18       
+1    202209230645  S2022092310296                 9                             9       
+2    202209230645  S2022092310297                 9                            18       
+3    202209230645  S2022092310298                 9                            18       
+4    202209230645  S2022092310304                 9                             9       
+..            ...             ...               ...                           ...    ...
+174  202209230645  S2022092310833                 8                             8       
+175  202209230645  S2022092310836                 8                             8       
+176  202209230645  S2022092310841                 8                             8       
+177  202209230645  S2022092310845                 8                             8       
+178  202209230645  S2022092310846                 8                             8       
+
+[179 rows x 5 columns]
+[2023-02-28 17:40:01.942] INFO [22720] - DMS呼叫演算法計算對應訂單批號配送商
+[2023-02-28 17:40:01.991] INFO [22720] - steps in db manager
+[2023-02-28 17:40:01.994] INFO [22720] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 17:40:02.016] INFO [22720] - steps in db manager
+[2023-02-28 17:40:02.018] INFO [22720] - message : conduct the sql => SELECT * FROM HOLIDAY
+[2023-02-28 17:40:02.028] INFO [22720] - steps in db manager
+[2023-02-28 17:40:02.030] INFO [22720] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 17:40:02.133] INFO [22720] - steps in db manager
+[2023-02-28 17:40:02.136] INFO [22720] - message : conduct the sql => EXEC DISTR_INFO
+[2023-02-28 17:40:02.150] INFO [22720] - steps in db manager
+[2023-02-28 17:40:02.152] INFO [22720] - message : conduct the sql => EXEC SHIPPER_INFO
+[2023-02-28 17:40:02.176] INFO [22720] - steps in db manager
+[2023-02-28 17:40:02.179] INFO [22720] - message : conduct the sql => SELECT * FROM ORDER_M WHERE BATCH_NO = '202208251335' AND RESEND_FLAG = 'Y'
+[2023-02-28 17:40:02.213] INFO [22720] - steps in db manager
+[2023-02-28 17:40:02.216] INFO [22720] - message : conduct the sql => SELECT *FROM ORDER_M WHERE CREATE_DT BETWEEN DATEADD(mm, DATEDIFF(mm,0,getdate()), 0) AND DATEADD(mm, 1, DATEADD(dd, -1, DATEADD(mm, DATEDIFF(mm,0,getdate()), 0)))
+[2023-02-28 17:40:02.632] INFO [22720] - steps in db manager
+[2023-02-28 17:40:02.633] INFO [22720] - message : conduct the sql => SELECT * FROM ORDER_D_EST_PACK
+[2023-02-28 17:40:02.951] INFO [22720] - Finish loading order information from DB
+[2023-02-28 17:40:02.957] INFO [22720] - Start to shipper condition judgment
+[2023-02-28 17:40:03.583] INFO [22720] - Complete the basic field data capture
+[2023-02-28 17:40:03.591] INFO [22720] - Start Holiday Table Calculation
+[2023-02-28 17:40:03.656] INFO [22720] - Start filter out eligible distributors
+[2023-02-28 17:40:04.052] INFO [22720] - Choose a distributor by the lowest cost
+[2023-02-28 17:40:05.090] INFO [22720] - Start adjusting the ratio of carriers
+[2023-02-28 17:40:05.387] INFO [22720] - 變更配送商：4.0
+[2023-02-28 17:40:05.389] INFO [22720] - 變更訂單數量：0
+[2023-02-28 17:40:05.403] INFO [22720] - 變更配送商：1.0
+[2023-02-28 17:40:05.406] INFO [22720] - 變更訂單數量：0
+[2023-02-28 17:40:05.422] INFO [22720] - 變更配送商：7.0
+[2023-02-28 17:40:05.424] INFO [22720] - 變更訂單數量：0
+[2023-02-28 17:40:05.438] INFO [22720] - 變更配送商：6.0
+[2023-02-28 17:40:05.447] INFO [22720] - 變更訂單數量：0
+[2023-02-28 17:40:05.466] INFO [22720] - 變更配送商：14.0
+[2023-02-28 17:40:05.468] INFO [22720] - 變更訂單數量：0
+[2023-02-28 17:40:05.857] INFO [22720] - 變更配送商：3.0
+[2023-02-28 17:40:05.859] INFO [22720] - 變更訂單數量：1
+[2023-02-28 17:40:05.904] INFO [22720] - Order Distribution Status Statistics
+[2023-02-28 17:40:05.911] INFO [22720] - 4.0:0.0
+[2023-02-28 17:40:05.915] INFO [22720] - 1.0:2.0
+[2023-02-28 17:40:05.918] INFO [22720] - 7.0:3.0
+[2023-02-28 17:40:05.922] INFO [22720] - 6.0:0.0
+[2023-02-28 17:40:05.927] INFO [22720] - 2.0:13.0
+[2023-02-28 17:40:05.932] INFO [22720] - 14.0:0.0
+[2023-02-28 17:40:05.936] INFO [22720] - 3.0:23.0
+[2023-02-28 17:40:05.941] INFO [22720] - 9.0:0.0
+[2023-02-28 17:40:05.944] INFO [22720] - rule-based最適配送商演算法計算完成
+[2023-02-28 17:41:23.229] INFO [22720] - steps in db manager
+[2023-02-28 17:41:23.232] INFO [22720] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 17:41:23.279] INFO [22720] - steps in db manager
+[2023-02-28 17:41:23.281] INFO [22720] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 17:54:21.574] INFO [22720] - DMS呼叫演算法計算對應訂單批號配送商
+[2023-02-28 17:54:21.607] INFO [22720] - steps in db manager
+[2023-02-28 17:54:21.610] INFO [22720] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 17:54:21.620] INFO [22720] - steps in db manager
+[2023-02-28 17:54:21.622] INFO [22720] - message : conduct the sql => SELECT * FROM HOLIDAY
+[2023-02-28 17:54:21.628] INFO [22720] - steps in db manager
+[2023-02-28 17:54:21.630] INFO [22720] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 17:54:21.734] INFO [22720] - steps in db manager
+[2023-02-28 17:54:21.736] INFO [22720] - message : conduct the sql => EXEC DISTR_INFO
+[2023-02-28 17:54:21.750] INFO [22720] - steps in db manager
+[2023-02-28 17:54:21.752] INFO [22720] - message : conduct the sql => EXEC SHIPPER_INFO
+[2023-02-28 17:54:21.775] INFO [22720] - steps in db manager
+[2023-02-28 17:54:21.779] INFO [22720] - message : conduct the sql => SELECT * FROM ORDER_M WHERE BATCH_NO = '202208251335' AND RESEND_FLAG = 'Y'
+[2023-02-28 17:54:21.815] INFO [22720] - steps in db manager
+[2023-02-28 17:54:21.818] INFO [22720] - message : conduct the sql => SELECT *FROM ORDER_M WHERE CREATE_DT BETWEEN DATEADD(mm, DATEDIFF(mm,0,getdate()), 0) AND DATEADD(mm, 1, DATEADD(dd, -1, DATEADD(mm, DATEDIFF(mm,0,getdate()), 0)))
+[2023-02-28 17:54:22.246] INFO [22720] - steps in db manager
+[2023-02-28 17:54:22.248] INFO [22720] - message : conduct the sql => SELECT * FROM ORDER_D_EST_PACK
+[2023-02-28 17:54:22.561] INFO [22720] - Finish loading order information from DB
+[2023-02-28 17:54:22.568] INFO [22720] - Start to shipper condition judgment
+[2023-02-28 17:54:23.195] INFO [22720] - Complete the basic field data capture
+[2023-02-28 17:54:23.198] INFO [22720] - Start Holiday Table Calculation
+[2023-02-28 17:54:23.272] INFO [22720] - Start filter out eligible distributors
+[2023-02-28 17:54:23.652] INFO [22720] - Choose a distributor by the lowest cost
+[2023-02-28 17:54:24.632] INFO [22720] - Start adjusting the ratio of carriers
+[2023-02-28 17:54:24.886] INFO [22720] - 變更配送商：4.0
+[2023-02-28 17:54:24.893] INFO [22720] - 變更訂單數量：0
+[2023-02-28 17:54:24.907] INFO [22720] - 變更配送商：1.0
+[2023-02-28 17:54:24.911] INFO [22720] - 變更訂單數量：0
+[2023-02-28 17:54:24.947] INFO [22720] - 變更配送商：7.0
+[2023-02-28 17:54:24.952] INFO [22720] - 變更訂單數量：0
+[2023-02-28 17:54:24.973] INFO [22720] - 變更配送商：6.0
+[2023-02-28 17:54:24.977] INFO [22720] - 變更訂單數量：0
+[2023-02-28 17:54:25.003] INFO [22720] - 變更配送商：14.0
+[2023-02-28 17:54:25.021] INFO [22720] - 變更訂單數量：0
+[2023-02-28 17:54:25.421] INFO [22720] - 變更配送商：3.0
+[2023-02-28 17:54:25.426] INFO [22720] - 變更訂單數量：1
+[2023-02-28 17:54:25.470] INFO [22720] - Order Distribution Status Statistics
+[2023-02-28 17:54:25.473] INFO [22720] - 4.0:0.0
+[2023-02-28 17:54:25.477] INFO [22720] - 1.0:2.0
+[2023-02-28 17:54:25.484] INFO [22720] - 7.0:3.0
+[2023-02-28 17:54:25.515] INFO [22720] - 6.0:0.0
+[2023-02-28 17:54:25.518] INFO [22720] - 2.0:13.0
+[2023-02-28 17:54:25.522] INFO [22720] - 14.0:0.0
+[2023-02-28 17:54:25.526] INFO [22720] - 3.0:23.0
+[2023-02-28 17:54:25.530] INFO [22720] - 9.0:0.0
+[2023-02-28 17:54:25.533] INFO [22720] - rule-based最適配送商演算法計算完成
+[2023-02-28 17:56:22.034] INFO [22720] - steps in db manager
+[2023-02-28 17:56:22.037] INFO [22720] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 18:10:42.143] INFO [22720] - steps in db manager
+[2023-02-28 18:10:42.147] INFO [22720] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 18:10:43.557] INFO [22720] - steps in db manager
+[2023-02-28 18:10:43.560] INFO [22720] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 20:03:38.688] INFO [15644] - DMS呼叫演算法計算對應訂單批號配送商
+[2023-02-28 20:03:38.932] INFO [15644] - steps in db manager
+[2023-02-28 20:03:38.935] INFO [15644] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 20:03:38.955] INFO [15644] - steps in db manager
+[2023-02-28 20:03:38.957] INFO [15644] - message : conduct the sql => SELECT * FROM HOLIDAY
+[2023-02-28 20:03:38.968] INFO [15644] - steps in db manager
+[2023-02-28 20:03:38.971] INFO [15644] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 20:03:39.240] INFO [15644] - steps in db manager
+[2023-02-28 20:03:39.243] INFO [15644] - message : conduct the sql => EXEC DISTR_INFO
+[2023-02-28 20:03:39.319] INFO [15644] - steps in db manager
+[2023-02-28 20:03:39.322] INFO [15644] - message : conduct the sql => EXEC SHIPPER_INFO
+[2023-02-28 20:03:39.348] INFO [15644] - steps in db manager
+[2023-02-28 20:03:39.351] INFO [15644] - message : conduct the sql => SELECT * FROM ORDER_M WHERE BATCH_NO = '202208251335' AND RESEND_FLAG = 'Y'
+[2023-02-28 20:03:39.380] INFO [15644] - steps in db manager
+[2023-02-28 20:03:39.382] INFO [15644] - message : conduct the sql => SELECT *FROM ORDER_M WHERE CREATE_DT BETWEEN DATEADD(mm, DATEDIFF(mm,0,getdate()), 0) AND DATEADD(mm, 1, DATEADD(dd, -1, DATEADD(mm, DATEDIFF(mm,0,getdate()), 0)))
+[2023-02-28 20:03:39.957] INFO [15644] - steps in db manager
+[2023-02-28 20:03:39.959] INFO [15644] - message : conduct the sql => SELECT * FROM ORDER_D_EST_PACK
+[2023-02-28 20:03:40.327] INFO [15644] - Finish loading order information from DB
+[2023-02-28 20:03:40.342] INFO [15644] - Start to shipper condition judgment
+[2023-02-28 20:03:40.713] INFO [15644] - Complete the basic field data capture
+[2023-02-28 20:03:40.716] INFO [15644] - Start Holiday Table Calculation
+[2023-02-28 20:03:40.762] INFO [15644] - Start filter out eligible distributors
+[2023-02-28 20:03:40.933] INFO [15644] - Choose a distributor by the lowest cost
+[2023-02-28 20:03:41.506] INFO [15644] - Start adjusting the ratio of carriers
+[2023-02-28 20:03:41.650] INFO [15644] - 變更配送商：4.0
+[2023-02-28 20:03:41.658] INFO [15644] - 變更訂單數量：0
+[2023-02-28 20:03:41.685] INFO [15644] - 變更配送商：1.0
+[2023-02-28 20:03:41.690] INFO [15644] - 變更訂單數量：0
+[2023-02-28 20:03:41.708] INFO [15644] - 變更配送商：7.0
+[2023-02-28 20:03:41.728] INFO [15644] - 變更訂單數量：0
+[2023-02-28 20:03:41.767] INFO [15644] - 變更配送商：6.0
+[2023-02-28 20:03:41.773] INFO [15644] - 變更訂單數量：0
+[2023-02-28 20:03:41.794] INFO [15644] - 變更配送商：14.0
+[2023-02-28 20:03:41.796] INFO [15644] - 變更訂單數量：0
+[2023-02-28 20:03:41.998] INFO [15644] - 變更配送商：3.0
+[2023-02-28 20:03:42.001] INFO [15644] - 變更訂單數量：1
+[2023-02-28 20:03:42.026] INFO [15644] - Order Distribution Status Statistics
+[2023-02-28 20:03:42.031] INFO [15644] - 4.0:0.0
+[2023-02-28 20:03:42.042] INFO [15644] - 1.0:2.0
+[2023-02-28 20:03:42.051] INFO [15644] - 7.0:3.0
+[2023-02-28 20:03:42.056] INFO [15644] - 6.0:0.0
+[2023-02-28 20:03:42.061] INFO [15644] - 2.0:13.0
+[2023-02-28 20:03:42.065] INFO [15644] - 14.0:0.0
+[2023-02-28 20:03:42.071] INFO [15644] - 3.0:23.0
+[2023-02-28 20:03:42.076] INFO [15644] - 9.0:0.0
+[2023-02-28 20:03:42.079] INFO [15644] - rule-based最適配送商演算法計算完成
+[2023-02-28 20:03:42.113] INFO [15644] - steps in db manager
+[2023-02-28 20:03:42.119] INFO [15644] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 20:03:42.142] INFO [15644] - steps in db manager
+[2023-02-28 20:03:42.144] INFO [15644] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 20:05:32.803] INFO [19644] - DMS呼叫演算法計算對應訂單批號配送商
+[2023-02-28 20:05:32.946] INFO [19644] - steps in db manager
+[2023-02-28 20:05:32.949] INFO [19644] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 20:05:32.957] INFO [19644] - steps in db manager
+[2023-02-28 20:05:32.959] INFO [19644] - message : conduct the sql => SELECT * FROM HOLIDAY
+[2023-02-28 20:05:32.965] INFO [19644] - steps in db manager
+[2023-02-28 20:05:32.966] INFO [19644] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 20:05:33.075] INFO [19644] - steps in db manager
+[2023-02-28 20:05:33.079] INFO [19644] - message : conduct the sql => EXEC DISTR_INFO
+[2023-02-28 20:05:33.096] INFO [19644] - steps in db manager
+[2023-02-28 20:05:33.098] INFO [19644] - message : conduct the sql => EXEC SHIPPER_INFO
+[2023-02-28 20:05:33.119] INFO [19644] - steps in db manager
+[2023-02-28 20:05:33.120] INFO [19644] - message : conduct the sql => SELECT * FROM ORDER_M WHERE BATCH_NO = '202208251335' AND RESEND_FLAG = 'Y'
+[2023-02-28 20:05:33.140] INFO [19644] - steps in db manager
+[2023-02-28 20:05:33.142] INFO [19644] - message : conduct the sql => SELECT *FROM ORDER_M WHERE CREATE_DT BETWEEN DATEADD(mm, DATEDIFF(mm,0,getdate()), 0) AND DATEADD(mm, 1, DATEADD(dd, -1, DATEADD(mm, DATEDIFF(mm,0,getdate()), 0)))
+[2023-02-28 20:05:33.598] INFO [19644] - steps in db manager
+[2023-02-28 20:05:33.603] INFO [19644] - message : conduct the sql => SELECT * FROM ORDER_D_EST_PACK
+[2023-02-28 20:05:33.832] INFO [19644] - Finish loading order information from DB
+[2023-02-28 20:05:33.838] INFO [19644] - Start to shipper condition judgment
+[2023-02-28 20:05:34.144] INFO [19644] - Complete the basic field data capture
+[2023-02-28 20:05:34.148] INFO [19644] - Start Holiday Table Calculation
+[2023-02-28 20:05:34.182] INFO [19644] - Start filter out eligible distributors
+[2023-02-28 20:05:34.339] INFO [19644] - Choose a distributor by the lowest cost
+[2023-02-28 20:05:34.787] INFO [19644] - Start adjusting the ratio of carriers
+[2023-02-28 20:05:34.910] INFO [19644] - 變更配送商：4.0
+[2023-02-28 20:05:34.912] INFO [19644] - 變更訂單數量：0
+[2023-02-28 20:05:34.929] INFO [19644] - 變更配送商：1.0
+[2023-02-28 20:05:34.935] INFO [19644] - 變更訂單數量：0
+[2023-02-28 20:05:34.952] INFO [19644] - 變更配送商：7.0
+[2023-02-28 20:05:34.955] INFO [19644] - 變更訂單數量：0
+[2023-02-28 20:05:34.972] INFO [19644] - 變更配送商：6.0
+[2023-02-28 20:05:34.974] INFO [19644] - 變更訂單數量：0
+[2023-02-28 20:05:34.988] INFO [19644] - 變更配送商：14.0
+[2023-02-28 20:05:34.994] INFO [19644] - 變更訂單數量：0
+[2023-02-28 20:05:35.153] INFO [19644] - 變更配送商：3.0
+[2023-02-28 20:05:35.156] INFO [19644] - 變更訂單數量：1
+[2023-02-28 20:05:35.177] INFO [19644] - Order Distribution Status Statistics
+[2023-02-28 20:05:35.181] INFO [19644] - 4.0:0.0
+[2023-02-28 20:05:35.186] INFO [19644] - 1.0:2.0
+[2023-02-28 20:05:35.189] INFO [19644] - 7.0:3.0
+[2023-02-28 20:05:35.193] INFO [19644] - 6.0:0.0
+[2023-02-28 20:05:35.201] INFO [19644] - 2.0:13.0
+[2023-02-28 20:05:35.204] INFO [19644] - 14.0:0.0
+[2023-02-28 20:05:35.208] INFO [19644] - 3.0:23.0
+[2023-02-28 20:05:35.224] INFO [19644] - 9.0:0.0
+[2023-02-28 20:05:35.232] INFO [19644] - rule-based最適配送商演算法計算完成
+[2023-02-28 20:05:35.275] INFO [19644] - steps in db manager
+[2023-02-28 20:05:35.277] INFO [19644] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 20:05:35.298] INFO [19644] - steps in db manager
+[2023-02-28 20:05:35.301] INFO [19644] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 20:12:15.001] INFO [24840] - DMS呼叫演算法計算對應訂單批號配送商
+[2023-02-28 20:12:15.109] INFO [24840] - steps in db manager
+[2023-02-28 20:12:15.111] INFO [24840] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 20:12:15.116] INFO [24840] - steps in db manager
+[2023-02-28 20:12:15.118] INFO [24840] - message : conduct the sql => SELECT * FROM HOLIDAY
+[2023-02-28 20:12:15.124] INFO [24840] - steps in db manager
+[2023-02-28 20:12:15.126] INFO [24840] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 20:12:15.216] INFO [24840] - steps in db manager
+[2023-02-28 20:12:15.220] INFO [24840] - message : conduct the sql => EXEC DISTR_INFO
+[2023-02-28 20:12:15.233] INFO [24840] - steps in db manager
+[2023-02-28 20:12:15.237] INFO [24840] - message : conduct the sql => EXEC SHIPPER_INFO
+[2023-02-28 20:12:15.256] INFO [24840] - steps in db manager
+[2023-02-28 20:12:15.258] INFO [24840] - message : conduct the sql => SELECT * FROM ORDER_M WHERE BATCH_NO = '202208251335' AND RESEND_FLAG = 'Y'
+[2023-02-28 20:12:15.277] INFO [24840] - steps in db manager
+[2023-02-28 20:12:15.279] INFO [24840] - message : conduct the sql => SELECT *FROM ORDER_M WHERE CREATE_DT BETWEEN DATEADD(mm, DATEDIFF(mm,0,getdate()), 0) AND DATEADD(mm, 1, DATEADD(dd, -1, DATEADD(mm, DATEDIFF(mm,0,getdate()), 0)))
+[2023-02-28 20:12:15.695] INFO [24840] - steps in db manager
+[2023-02-28 20:12:15.697] INFO [24840] - message : conduct the sql => SELECT * FROM ORDER_D_EST_PACK
+[2023-02-28 20:12:15.874] INFO [24840] - Finish loading order information from DB
+[2023-02-28 20:12:15.877] INFO [24840] - Start to shipper condition judgment
+[2023-02-28 20:12:16.183] INFO [24840] - Complete the basic field data capture
+[2023-02-28 20:12:16.188] INFO [24840] - Start Holiday Table Calculation
+[2023-02-28 20:12:16.226] INFO [24840] - Start filter out eligible distributors
+[2023-02-28 20:12:16.368] INFO [24840] - Choose a distributor by the lowest cost
+[2023-02-28 20:12:16.849] INFO [24840] - Start adjusting the ratio of carriers
+[2023-02-28 20:12:16.974] INFO [24840] - 變更配送商：4.0
+[2023-02-28 20:12:16.977] INFO [24840] - 變更訂單數量：0
+[2023-02-28 20:12:16.996] INFO [24840] - 變更配送商：1.0
+[2023-02-28 20:12:16.999] INFO [24840] - 變更訂單數量：0
+[2023-02-28 20:12:17.011] INFO [24840] - 變更配送商：7.0
+[2023-02-28 20:12:17.021] INFO [24840] - 變更訂單數量：0
+[2023-02-28 20:12:17.036] INFO [24840] - 變更配送商：6.0
+[2023-02-28 20:12:17.039] INFO [24840] - 變更訂單數量：0
+[2023-02-28 20:12:17.058] INFO [24840] - 變更配送商：14.0
+[2023-02-28 20:12:17.061] INFO [24840] - 變更訂單數量：0
+[2023-02-28 20:12:17.210] INFO [24840] - 變更配送商：3.0
+[2023-02-28 20:12:17.211] INFO [24840] - 變更訂單數量：1
+[2023-02-28 20:12:17.231] INFO [24840] - Order Distribution Status Statistics
+[2023-02-28 20:12:17.238] INFO [24840] - 4.0:0.0
+[2023-02-28 20:12:17.242] INFO [24840] - 1.0:2.0
+[2023-02-28 20:12:17.245] INFO [24840] - 7.0:3.0
+[2023-02-28 20:12:17.250] INFO [24840] - 6.0:0.0
+[2023-02-28 20:12:17.254] INFO [24840] - 2.0:13.0
+[2023-02-28 20:12:17.264] INFO [24840] - 14.0:0.0
+[2023-02-28 20:12:17.269] INFO [24840] - 3.0:23.0
+[2023-02-28 20:12:17.272] INFO [24840] - 9.0:0.0
+[2023-02-28 20:12:17.275] INFO [24840] - rule-based最適配送商演算法計算完成
+[2023-02-28 20:12:17.314] INFO [24840] - steps in db manager
+[2023-02-28 20:12:17.316] INFO [24840] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 20:12:17.336] INFO [24840] - steps in db manager
+[2023-02-28 20:12:17.338] INFO [24840] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 20:14:17.663] INFO [24840] - DMS呼叫演算法計算對應訂單批號配送商
+[2023-02-28 20:14:17.704] INFO [24840] - steps in db manager
+[2023-02-28 20:14:17.707] INFO [24840] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 20:14:17.728] INFO [24840] - steps in db manager
+[2023-02-28 20:14:17.731] INFO [24840] - message : conduct the sql => SELECT * FROM HOLIDAY
+[2023-02-28 20:14:17.743] INFO [24840] - steps in db manager
+[2023-02-28 20:14:17.745] INFO [24840] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 20:14:17.856] INFO [24840] - steps in db manager
+[2023-02-28 20:14:17.861] INFO [24840] - message : conduct the sql => EXEC DISTR_INFO
+[2023-02-28 20:14:17.875] INFO [24840] - steps in db manager
+[2023-02-28 20:14:17.879] INFO [24840] - message : conduct the sql => EXEC SHIPPER_INFO
+[2023-02-28 20:14:17.904] INFO [24840] - steps in db manager
+[2023-02-28 20:14:17.907] INFO [24840] - message : conduct the sql => SELECT * FROM ORDER_M WHERE BATCH_NO = '202208251335' AND RESEND_FLAG = 'Y'
+[2023-02-28 20:14:17.950] INFO [24840] - steps in db manager
+[2023-02-28 20:14:17.954] INFO [24840] - message : conduct the sql => SELECT *FROM ORDER_M WHERE CREATE_DT BETWEEN DATEADD(mm, DATEDIFF(mm,0,getdate()), 0) AND DATEADD(mm, 1, DATEADD(dd, -1, DATEADD(mm, DATEDIFF(mm,0,getdate()), 0)))
+[2023-02-28 20:14:18.433] INFO [24840] - steps in db manager
+[2023-02-28 20:14:18.436] INFO [24840] - message : conduct the sql => SELECT * FROM ORDER_D_EST_PACK
+[2023-02-28 20:14:18.827] INFO [24840] - Finish loading order information from DB
+[2023-02-28 20:14:18.833] INFO [24840] - Start to shipper condition judgment
+[2023-02-28 20:14:19.597] INFO [24840] - Complete the basic field data capture
+[2023-02-28 20:14:19.603] INFO [24840] - Start Holiday Table Calculation
+[2023-02-28 20:14:19.694] INFO [24840] - Start filter out eligible distributors
+[2023-02-28 20:14:20.135] INFO [24840] - Choose a distributor by the lowest cost
+[2023-02-28 20:14:21.255] INFO [24840] - Start adjusting the ratio of carriers
+[2023-02-28 20:14:21.592] INFO [24840] - 變更配送商：4.0
+[2023-02-28 20:14:21.595] INFO [24840] - 變更訂單數量：0
+[2023-02-28 20:14:21.621] INFO [24840] - 變更配送商：1.0
+[2023-02-28 20:14:21.624] INFO [24840] - 變更訂單數量：0
+[2023-02-28 20:14:21.647] INFO [24840] - 變更配送商：7.0
+[2023-02-28 20:14:21.653] INFO [24840] - 變更訂單數量：0
+[2023-02-28 20:14:21.674] INFO [24840] - 變更配送商：6.0
+[2023-02-28 20:14:21.677] INFO [24840] - 變更訂單數量：0
+[2023-02-28 20:14:21.696] INFO [24840] - 變更配送商：14.0
+[2023-02-28 20:14:21.699] INFO [24840] - 變更訂單數量：0
+[2023-02-28 20:14:22.061] INFO [24840] - 變更配送商：3.0
+[2023-02-28 20:14:22.063] INFO [24840] - 變更訂單數量：1
+[2023-02-28 20:14:22.160] INFO [24840] - Order Distribution Status Statistics
+[2023-02-28 20:14:22.168] INFO [24840] - 4.0:0.0
+[2023-02-28 20:14:22.174] INFO [24840] - 1.0:2.0
+[2023-02-28 20:14:22.193] INFO [24840] - 7.0:3.0
+[2023-02-28 20:14:22.207] INFO [24840] - 6.0:0.0
+[2023-02-28 20:14:22.223] INFO [24840] - 2.0:13.0
+[2023-02-28 20:14:22.232] INFO [24840] - 14.0:0.0
+[2023-02-28 20:14:22.236] INFO [24840] - 3.0:23.0
+[2023-02-28 20:14:22.241] INFO [24840] - 9.0:0.0
+[2023-02-28 20:14:22.243] INFO [24840] - rule-based最適配送商演算法計算完成
+[2023-02-28 20:14:22.284] INFO [24840] - steps in db manager
+[2023-02-28 20:14:22.286] INFO [24840] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 20:14:22.333] INFO [24840] - steps in db manager
+[2023-02-28 20:14:22.335] INFO [24840] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 20:22:22.385] INFO [22676] - DMS呼叫演算法計算對應訂單批號配送商
+[2023-02-28 20:22:22.616] INFO [22676] - steps in db manager
+[2023-02-28 20:22:22.619] INFO [22676] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 20:22:22.626] INFO [22676] - steps in db manager
+[2023-02-28 20:22:22.629] INFO [22676] - message : conduct the sql => SELECT * FROM HOLIDAY
+[2023-02-28 20:22:22.634] INFO [22676] - steps in db manager
+[2023-02-28 20:22:22.636] INFO [22676] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 20:22:22.735] INFO [22676] - steps in db manager
+[2023-02-28 20:22:22.740] INFO [22676] - message : conduct the sql => EXEC DISTR_INFO
+[2023-02-28 20:22:22.756] INFO [22676] - steps in db manager
+[2023-02-28 20:22:22.758] INFO [22676] - message : conduct the sql => EXEC SHIPPER_INFO
+[2023-02-28 20:22:22.777] INFO [22676] - steps in db manager
+[2023-02-28 20:22:22.779] INFO [22676] - message : conduct the sql => SELECT * FROM ORDER_M WHERE BATCH_NO = '202208251335' AND RESEND_FLAG = 'Y'
+[2023-02-28 20:22:22.799] INFO [22676] - steps in db manager
+[2023-02-28 20:22:22.802] INFO [22676] - message : conduct the sql => SELECT *FROM ORDER_M WHERE CREATE_DT BETWEEN DATEADD(mm, DATEDIFF(mm,0,getdate()), 0) AND DATEADD(mm, 1, DATEADD(dd, -1, DATEADD(mm, DATEDIFF(mm,0,getdate()), 0)))
+[2023-02-28 20:22:23.248] INFO [22676] - steps in db manager
+[2023-02-28 20:22:23.253] INFO [22676] - message : conduct the sql => SELECT * FROM ORDER_D_EST_PACK
+[2023-02-28 20:22:23.448] INFO [22676] - Finish loading order information from DB
+[2023-02-28 20:22:23.452] INFO [22676] - Start to shipper condition judgment
+[2023-02-28 20:22:23.809] INFO [22676] - Complete the basic field data capture
+[2023-02-28 20:22:23.815] INFO [22676] - Start Holiday Table Calculation
+[2023-02-28 20:22:23.892] INFO [22676] - Start filter out eligible distributors
+[2023-02-28 20:22:24.122] INFO [22676] - Choose a distributor by the lowest cost
+[2023-02-28 20:22:24.754] INFO [22676] - Start adjusting the ratio of carriers
+[2023-02-28 20:22:24.953] INFO [22676] - 變更配送商：4.0
+[2023-02-28 20:22:24.956] INFO [22676] - 變更訂單數量：0
+[2023-02-28 20:22:24.969] INFO [22676] - 變更配送商：1.0
+[2023-02-28 20:22:24.973] INFO [22676] - 變更訂單數量：0
+[2023-02-28 20:22:24.994] INFO [22676] - 變更配送商：7.0
+[2023-02-28 20:22:25.013] INFO [22676] - 變更訂單數量：0
+[2023-02-28 20:22:25.058] INFO [22676] - 變更配送商：6.0
+[2023-02-28 20:22:25.061] INFO [22676] - 變更訂單數量：0
+[2023-02-28 20:22:25.075] INFO [22676] - 變更配送商：14.0
+[2023-02-28 20:22:25.078] INFO [22676] - 變更訂單數量：0
+[2023-02-28 20:22:25.267] INFO [22676] - 變更配送商：3.0
+[2023-02-28 20:22:25.270] INFO [22676] - 變更訂單數量：1
+[2023-02-28 20:22:25.291] INFO [22676] - Order Distribution Status Statistics
+[2023-02-28 20:22:25.294] INFO [22676] - 4.0:0.0
+[2023-02-28 20:22:25.297] INFO [22676] - 1.0:2.0
+[2023-02-28 20:22:25.301] INFO [22676] - 7.0:3.0
+[2023-02-28 20:22:25.305] INFO [22676] - 6.0:0.0
+[2023-02-28 20:22:25.309] INFO [22676] - 2.0:13.0
+[2023-02-28 20:22:25.315] INFO [22676] - 14.0:0.0
+[2023-02-28 20:22:25.321] INFO [22676] - 3.0:23.0
+[2023-02-28 20:22:25.324] INFO [22676] - 9.0:0.0
+[2023-02-28 20:22:25.327] INFO [22676] - rule-based最適配送商演算法計算完成
+[2023-02-28 20:22:25.383] INFO [22676] - steps in db manager
+[2023-02-28 20:22:25.385] INFO [22676] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 20:22:25.402] INFO [22676] - steps in db manager
+[2023-02-28 20:22:25.404] INFO [22676] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 20:22:57.249] INFO [22676] - Start to write the result to database
+[2023-02-28 20:22:57.893] INFO [22676] - Finish writing the result to database
+[2023-02-28 20:22:57.896] INFO [22676] - rule-based and GA result
+[2023-02-28 20:22:57.899] INFO [22676] -         BATCH_NO        ORDER_NO EST_DISTR_TYPE_ID  EST_DISTR_TYPE_ID(GA_result) REMARK
+0   202208251335  S2022082510787                 9                             9       
+1   202208251335  S2022082510788                 8                             8       
+2   202208251335  S2022082510789                 8                             8       
+3   202208251335  S2022082510794                 8                             8       
+4   202208251335  S2022082510795                 8                             8       
+5   202208251335  S2022082510796                 8                             8       
+6   202208251335  S2022082510797                 8                             8       
+7   202208251335  S2022082510798                 8                             8       
+8   202208251335  S2022082510799                 8                             8       
+9   202208251335  S2022082510800                 8                             8       
+10  202208251335  S2022082510801                 8                             8       
+11  202208251335  S2022082510802                 8                             8       
+12  202208251335  S2022082510803                 8                             8       
+13  202208251335  S2022082510804                 8                             8       
+14  202208251335  S2022082510805                 8                             8       
+15  202208251335  S2022082510806                 8                             8       
+16  202208251335  S2022082510807                 8                             8       
+17  202208251335  S2022082510808                 8                             8       
+18  202208251335  S2022082510810                 8                             8       
+19  202208251335  S2022082510811                 8                             8       
+20  202208251335  S2022082510812                 8                             8       
+21  202208251335  S2022082510813                 8                             8       
+22  202208251335  S2022082510814                 8                             8       
+23  202208251335  S2022082510815                 8                             8       
+[2023-02-28 20:24:26.749] INFO [24552] - DMS呼叫演算法計算對應訂單批號配送商
+[2023-02-28 20:24:26.774] INFO [24552] - steps in db manager
+[2023-02-28 20:24:26.777] INFO [24552] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 20:24:26.785] INFO [24552] - steps in db manager
+[2023-02-28 20:24:26.787] INFO [24552] - message : conduct the sql => SELECT * FROM HOLIDAY
+[2023-02-28 20:24:26.795] INFO [24552] - steps in db manager
+[2023-02-28 20:24:26.797] INFO [24552] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 20:24:26.904] INFO [24552] - steps in db manager
+[2023-02-28 20:24:26.906] INFO [24552] - message : conduct the sql => EXEC DISTR_INFO
+[2023-02-28 20:24:26.918] INFO [24552] - steps in db manager
+[2023-02-28 20:24:26.922] INFO [24552] - message : conduct the sql => EXEC SHIPPER_INFO
+[2023-02-28 20:24:26.960] INFO [24552] - steps in db manager
+[2023-02-28 20:24:26.966] INFO [24552] - message : conduct the sql => SELECT * FROM ORDER_M WHERE BATCH_NO = '202209230645' AND RESEND_FLAG = 'Y'
+[2023-02-28 20:24:26.986] INFO [24552] - steps in db manager
+[2023-02-28 20:24:26.988] INFO [24552] - message : conduct the sql => SELECT *FROM ORDER_M WHERE CREATE_DT BETWEEN DATEADD(mm, DATEDIFF(mm,0,getdate()), 0) AND DATEADD(mm, 1, DATEADD(dd, -1, DATEADD(mm, DATEDIFF(mm,0,getdate()), 0)))
+[2023-02-28 20:24:27.555] INFO [24552] - steps in db manager
+[2023-02-28 20:24:27.558] INFO [24552] - message : conduct the sql => SELECT * FROM ORDER_D_EST_PACK
+[2023-02-28 20:24:28.773] INFO [24552] - Finish loading order information from DB
+[2023-02-28 20:24:28.779] INFO [24552] - Start to shipper condition judgment
+[2023-02-28 20:24:30.856] INFO [24552] - Complete the basic field data capture
+[2023-02-28 20:24:30.863] INFO [24552] - Start Holiday Table Calculation
+[2023-02-28 20:24:30.909] INFO [24552] - Start filter out eligible distributors
+[2023-02-28 20:24:32.872] INFO [24552] - Choose a distributor by the lowest cost
+[2023-02-28 20:24:38.723] INFO [24552] - Start adjusting the ratio of carriers
+[2023-02-28 20:24:39.010] INFO [24552] - 變更配送商：4.0
+[2023-02-28 20:24:39.013] INFO [24552] - 變更訂單數量：0
+[2023-02-28 20:24:39.055] INFO [24552] - 變更配送商：1.0
+[2023-02-28 20:24:39.057] INFO [24552] - 變更訂單數量：0
+[2023-02-28 20:24:39.087] INFO [24552] - 變更配送商：7.0
+[2023-02-28 20:24:39.091] INFO [24552] - 變更訂單數量：0
+[2023-02-28 20:24:39.116] INFO [24552] - 變更配送商：6.0
+[2023-02-28 20:24:39.120] INFO [24552] - 變更訂單數量：0
+[2023-02-28 20:24:39.150] INFO [24552] - 變更配送商：14.0
+[2023-02-28 20:24:39.160] INFO [24552] - 變更訂單數量：0
+[2023-02-28 20:24:41.572] INFO [24552] - 變更配送商：3.0
+[2023-02-28 20:24:41.580] INFO [24552] - 變更訂單數量：48
+[2023-02-28 20:24:41.603] INFO [24552] - Order Distribution Status Statistics
+[2023-02-28 20:24:41.608] INFO [24552] - 4.0:0.0
+[2023-02-28 20:24:41.613] INFO [24552] - 1.0:2.0
+[2023-02-28 20:24:41.620] INFO [24552] - 7.0:3.0
+[2023-02-28 20:24:41.626] INFO [24552] - 6.0:0.0
+[2023-02-28 20:24:41.629] INFO [24552] - 2.0:60.0
+[2023-02-28 20:24:41.632] INFO [24552] - 14.0:0.0
+[2023-02-28 20:24:41.646] INFO [24552] - 3.0:131.0
+[2023-02-28 20:24:41.650] INFO [24552] - 9.0:0.0
+[2023-02-28 20:24:41.655] INFO [24552] - rule-based最適配送商演算法計算完成
+[2023-02-28 20:24:41.687] INFO [24552] - steps in db manager
+[2023-02-28 20:24:41.689] INFO [24552] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 20:24:41.708] INFO [24552] - steps in db manager
+[2023-02-28 20:24:41.710] INFO [24552] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 20:30:44.318] INFO [24552] - Start to write the result to database
+[2023-02-28 20:30:45.281] INFO [24552] - Finish writing the result to database
+[2023-02-28 20:30:45.284] INFO [24552] - rule-based and GA result
+[2023-02-28 20:30:45.288] INFO [24552] -          BATCH_NO        ORDER_NO EST_DISTR_TYPE_ID  EST_DISTR_TYPE_ID(GA_result) REMARK
+0    202209230645  S2022092310295                 9                             9       
+1    202209230645  S2022092310296                 9                            18       
+2    202209230645  S2022092310297                 9                             9       
+3    202209230645  S2022092310298                 9                             9       
+4    202209230645  S2022092310304                 9                             7       
+..            ...             ...               ...                           ...    ...
+174  202209230645  S2022092310833                 8                             8       
+175  202209230645  S2022092310836                 8                             8       
+176  202209230645  S2022092310841                 8                             8       
+177  202209230645  S2022092310845                 8                             8       
+178  202209230645  S2022092310846                 8                             8       
+
+[179 rows x 5 columns]
+[2023-02-28 20:33:57.567] INFO [24684] - DMS呼叫演算法計算對應訂單批號配送商
+[2023-02-28 20:33:57.602] INFO [24684] - steps in db manager
+[2023-02-28 20:33:57.608] INFO [24684] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 20:33:57.616] INFO [24684] - steps in db manager
+[2023-02-28 20:33:57.618] INFO [24684] - message : conduct the sql => SELECT * FROM HOLIDAY
+[2023-02-28 20:33:57.624] INFO [24684] - steps in db manager
+[2023-02-28 20:33:57.626] INFO [24684] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 20:33:57.712] INFO [24684] - steps in db manager
+[2023-02-28 20:33:57.715] INFO [24684] - message : conduct the sql => EXEC DISTR_INFO
+[2023-02-28 20:33:57.733] INFO [24684] - steps in db manager
+[2023-02-28 20:33:57.734] INFO [24684] - message : conduct the sql => EXEC SHIPPER_INFO
+[2023-02-28 20:33:57.771] INFO [24684] - steps in db manager
+[2023-02-28 20:33:57.774] INFO [24684] - message : conduct the sql => SELECT * FROM ORDER_M WHERE BATCH_NO = '202209230645' AND RESEND_FLAG = 'Y'
+[2023-02-28 20:33:57.800] INFO [24684] - steps in db manager
+[2023-02-28 20:33:57.803] INFO [24684] - message : conduct the sql => SELECT *FROM ORDER_M WHERE CREATE_DT BETWEEN DATEADD(mm, DATEDIFF(mm,0,getdate()), 0) AND DATEADD(mm, 1, DATEADD(dd, -1, DATEADD(mm, DATEDIFF(mm,0,getdate()), 0)))
+[2023-02-28 20:33:58.226] INFO [24684] - steps in db manager
+[2023-02-28 20:33:58.229] INFO [24684] - message : conduct the sql => SELECT * FROM ORDER_D_EST_PACK
+[2023-02-28 20:33:59.093] INFO [24684] - Finish loading order information from DB
+[2023-02-28 20:33:59.096] INFO [24684] - Start to shipper condition judgment
+[2023-02-28 20:34:00.414] INFO [24684] - Complete the basic field data capture
+[2023-02-28 20:34:00.418] INFO [24684] - Start Holiday Table Calculation
+[2023-02-28 20:34:00.453] INFO [24684] - Start filter out eligible distributors
+[2023-02-28 20:34:01.982] INFO [24684] - Choose a distributor by the lowest cost
+[2023-02-28 20:34:05.980] INFO [24684] - Start adjusting the ratio of carriers
+[2023-02-28 20:34:06.114] INFO [24684] - 變更配送商：4.0
+[2023-02-28 20:34:06.118] INFO [24684] - 變更訂單數量：0
+[2023-02-28 20:34:06.141] INFO [24684] - 變更配送商：1.0
+[2023-02-28 20:34:06.145] INFO [24684] - 變更訂單數量：0
+[2023-02-28 20:34:06.167] INFO [24684] - 變更配送商：7.0
+[2023-02-28 20:34:06.174] INFO [24684] - 變更訂單數量：0
+[2023-02-28 20:34:06.197] INFO [24684] - 變更配送商：6.0
+[2023-02-28 20:34:06.203] INFO [24684] - 變更訂單數量：0
+[2023-02-28 20:34:06.224] INFO [24684] - 變更配送商：14.0
+[2023-02-28 20:34:06.227] INFO [24684] - 變更訂單數量：0
+[2023-02-28 20:34:08.177] INFO [24684] - 變更配送商：3.0
+[2023-02-28 20:34:08.181] INFO [24684] - 變更訂單數量：48
+[2023-02-28 20:34:08.202] INFO [24684] - Order Distribution Status Statistics
+[2023-02-28 20:34:08.207] INFO [24684] - 4.0:0.0
+[2023-02-28 20:34:08.214] INFO [24684] - 1.0:2.0
+[2023-02-28 20:34:08.222] INFO [24684] - 7.0:3.0
+[2023-02-28 20:34:08.227] INFO [24684] - 6.0:0.0
+[2023-02-28 20:34:08.231] INFO [24684] - 2.0:60.0
+[2023-02-28 20:34:08.235] INFO [24684] - 14.0:0.0
+[2023-02-28 20:34:08.238] INFO [24684] - 3.0:131.0
+[2023-02-28 20:34:08.242] INFO [24684] - 9.0:0.0
+[2023-02-28 20:34:08.244] INFO [24684] - rule-based最適配送商演算法計算完成
+[2023-02-28 20:34:08.500] INFO [24684] - steps in db manager
+[2023-02-28 20:34:08.503] INFO [24684] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 20:34:08.530] INFO [24684] - steps in db manager
+[2023-02-28 20:34:08.532] INFO [24684] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 20:40:21.102] INFO [24684] - Start to write the result to database
+[2023-02-28 20:40:21.966] INFO [24684] - Finish writing the result to database
+[2023-02-28 20:40:21.971] INFO [24684] - rule-based and GA result
+[2023-02-28 20:40:21.976] INFO [24684] -          BATCH_NO        ORDER_NO EST_DISTR_TYPE_ID  EST_DISTR_TYPE_ID(GA_result) REMARK
+0    202209230645  S2022092310295                 9                             9       
+1    202209230645  S2022092310296                 9                             7       
+2    202209230645  S2022092310297                 9                            18       
+3    202209230645  S2022092310298                 9                             8       
+4    202209230645  S2022092310304                 9                             9       
+..            ...             ...               ...                           ...    ...
+174  202209230645  S2022092310833                 8                             8       
+175  202209230645  S2022092310836                 8                             8       
+176  202209230645  S2022092310841                 8                             8       
+177  202209230645  S2022092310845                 8                             8       
+178  202209230645  S2022092310846                 8                             8       
+
+[179 rows x 5 columns]
+[2023-02-28 20:48:00.045] INFO [20728] - DMS呼叫演算法計算對應訂單批號配送商
+[2023-02-28 20:48:00.081] INFO [20728] - steps in db manager
+[2023-02-28 20:48:00.083] INFO [20728] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 20:48:00.090] INFO [20728] - steps in db manager
+[2023-02-28 20:48:00.092] INFO [20728] - message : conduct the sql => SELECT * FROM HOLIDAY
+[2023-02-28 20:48:00.099] INFO [20728] - steps in db manager
+[2023-02-28 20:48:00.101] INFO [20728] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 20:48:00.203] INFO [20728] - steps in db manager
+[2023-02-28 20:48:00.206] INFO [20728] - message : conduct the sql => EXEC DISTR_INFO
+[2023-02-28 20:48:00.226] INFO [20728] - steps in db manager
+[2023-02-28 20:48:00.228] INFO [20728] - message : conduct the sql => EXEC SHIPPER_INFO
+[2023-02-28 20:48:00.259] INFO [20728] - steps in db manager
+[2023-02-28 20:48:00.261] INFO [20728] - message : conduct the sql => SELECT * FROM ORDER_M WHERE BATCH_NO = '202209230645' AND RESEND_FLAG = 'Y'
+[2023-02-28 20:48:00.282] INFO [20728] - steps in db manager
+[2023-02-28 20:48:00.286] INFO [20728] - message : conduct the sql => SELECT *FROM ORDER_M WHERE CREATE_DT BETWEEN DATEADD(mm, DATEDIFF(mm,0,getdate()), 0) AND DATEADD(mm, 1, DATEADD(dd, -1, DATEADD(mm, DATEDIFF(mm,0,getdate()), 0)))
+[2023-02-28 20:48:00.720] INFO [20728] - steps in db manager
+[2023-02-28 20:48:00.723] INFO [20728] - message : conduct the sql => SELECT * FROM ORDER_D_EST_PACK
+[2023-02-28 20:48:01.636] INFO [20728] - Finish loading order information from DB
+[2023-02-28 20:48:01.639] INFO [20728] - Start to shipper condition judgment
+[2023-02-28 20:48:02.999] INFO [20728] - Complete the basic field data capture
+[2023-02-28 20:48:03.004] INFO [20728] - Start Holiday Table Calculation
+[2023-02-28 20:48:03.056] INFO [20728] - Start filter out eligible distributors
+[2023-02-28 20:48:04.629] INFO [20728] - Choose a distributor by the lowest cost
+[2023-02-28 20:48:08.556] INFO [20728] - Start adjusting the ratio of carriers
+[2023-02-28 20:48:08.697] INFO [20728] - 變更配送商：4.0
+[2023-02-28 20:48:08.707] INFO [20728] - 變更訂單數量：0
+[2023-02-28 20:48:08.733] INFO [20728] - 變更配送商：1.0
+[2023-02-28 20:48:08.762] INFO [20728] - 變更訂單數量：0
+[2023-02-28 20:48:08.792] INFO [20728] - 變更配送商：7.0
+[2023-02-28 20:48:08.795] INFO [20728] - 變更訂單數量：0
+[2023-02-28 20:48:08.826] INFO [20728] - 變更配送商：6.0
+[2023-02-28 20:48:08.830] INFO [20728] - 變更訂單數量：0
+[2023-02-28 20:48:08.858] INFO [20728] - 變更配送商：14.0
+[2023-02-28 20:48:08.862] INFO [20728] - 變更訂單數量：0
+[2023-02-28 20:48:10.865] INFO [20728] - 變更配送商：3.0
+[2023-02-28 20:48:10.866] INFO [20728] - 變更訂單數量：48
+[2023-02-28 20:48:10.907] INFO [20728] - Order Distribution Status Statistics
+[2023-02-28 20:48:10.910] INFO [20728] - 4.0:0.0
+[2023-02-28 20:48:10.915] INFO [20728] - 1.0:2.0
+[2023-02-28 20:48:10.919] INFO [20728] - 7.0:3.0
+[2023-02-28 20:48:10.922] INFO [20728] - 6.0:0.0
+[2023-02-28 20:48:10.941] INFO [20728] - 2.0:60.0
+[2023-02-28 20:48:10.962] INFO [20728] - 14.0:0.0
+[2023-02-28 20:48:11.000] INFO [20728] - 3.0:131.0
+[2023-02-28 20:48:11.003] INFO [20728] - 9.0:0.0
+[2023-02-28 20:48:11.010] INFO [20728] - rule-based最適配送商演算法計算完成
+[2023-02-28 20:48:11.092] INFO [20728] - steps in db manager
+[2023-02-28 20:48:11.094] INFO [20728] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 20:48:11.116] INFO [20728] - steps in db manager
+[2023-02-28 20:48:11.118] INFO [20728] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 20:54:22.467] INFO [20728] - Start to write the result to database
+[2023-02-28 20:54:23.277] INFO [20728] - Finish writing the result to database
+[2023-02-28 20:54:23.280] INFO [20728] - rule-based and GA result
+[2023-02-28 20:54:23.286] INFO [20728] -          BATCH_NO        ORDER_NO EST_DISTR_TYPE_ID  EST_DISTR_TYPE_ID(GA_result) REMARK
+0    202209230645  S2022092310295                 9                             9       
+1    202209230645  S2022092310296                 9                             9       
+2    202209230645  S2022092310297                 9                             1       
+3    202209230645  S2022092310298                 9                             9       
+4    202209230645  S2022092310304                 9                             8       
+..            ...             ...               ...                           ...    ...
+174  202209230645  S2022092310833                 8                             8       
+175  202209230645  S2022092310836                 8                             8       
+176  202209230645  S2022092310841                 8                             8       
+177  202209230645  S2022092310845                 8                             8       
+178  202209230645  S2022092310846                 8                             8       
+
+[179 rows x 5 columns]
+[2023-02-28 21:00:53.168] INFO [12408] - DMS呼叫演算法計算對應訂單批號配送商
+[2023-02-28 21:00:53.194] INFO [12408] - steps in db manager
+[2023-02-28 21:00:53.197] INFO [12408] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 21:00:53.206] INFO [12408] - steps in db manager
+[2023-02-28 21:00:53.208] INFO [12408] - message : conduct the sql => SELECT * FROM HOLIDAY
+[2023-02-28 21:00:53.214] INFO [12408] - steps in db manager
+[2023-02-28 21:00:53.216] INFO [12408] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 21:00:53.317] INFO [12408] - steps in db manager
+[2023-02-28 21:00:53.319] INFO [12408] - message : conduct the sql => EXEC DISTR_INFO
+[2023-02-28 21:00:53.329] INFO [12408] - steps in db manager
+[2023-02-28 21:00:53.331] INFO [12408] - message : conduct the sql => EXEC SHIPPER_INFO
+[2023-02-28 21:00:53.363] INFO [12408] - steps in db manager
+[2023-02-28 21:00:53.366] INFO [12408] - message : conduct the sql => SELECT * FROM ORDER_M WHERE BATCH_NO = '202209230645' AND RESEND_FLAG = 'Y'
+[2023-02-28 21:00:53.384] INFO [12408] - steps in db manager
+[2023-02-28 21:00:53.386] INFO [12408] - message : conduct the sql => SELECT *FROM ORDER_M WHERE CREATE_DT BETWEEN DATEADD(mm, DATEDIFF(mm,0,getdate()), 0) AND DATEADD(mm, 1, DATEADD(dd, -1, DATEADD(mm, DATEDIFF(mm,0,getdate()), 0)))
+[2023-02-28 21:00:53.867] INFO [12408] - steps in db manager
+[2023-02-28 21:00:53.872] INFO [12408] - message : conduct the sql => SELECT * FROM ORDER_D_EST_PACK
+[2023-02-28 21:00:55.016] INFO [12408] - Finish loading order information from DB
+[2023-02-28 21:00:55.019] INFO [12408] - Start to shipper condition judgment
+[2023-02-28 21:00:56.831] INFO [12408] - Complete the basic field data capture
+[2023-02-28 21:00:56.836] INFO [12408] - Start Holiday Table Calculation
+[2023-02-28 21:00:56.986] INFO [12408] - Start filter out eligible distributors
+[2023-02-28 21:00:58.687] INFO [12408] - Choose a distributor by the lowest cost
+[2023-02-28 21:01:02.663] INFO [12408] - Start adjusting the ratio of carriers
+[2023-02-28 21:01:02.785] INFO [12408] - 變更配送商：4.0
+[2023-02-28 21:01:02.788] INFO [12408] - 變更訂單數量：0
+[2023-02-28 21:01:02.805] INFO [12408] - 變更配送商：1.0
+[2023-02-28 21:01:02.809] INFO [12408] - 變更訂單數量：0
+[2023-02-28 21:01:02.838] INFO [12408] - 變更配送商：7.0
+[2023-02-28 21:01:02.844] INFO [12408] - 變更訂單數量：0
+[2023-02-28 21:01:02.863] INFO [12408] - 變更配送商：6.0
+[2023-02-28 21:01:02.866] INFO [12408] - 變更訂單數量：0
+[2023-02-28 21:01:02.891] INFO [12408] - 變更配送商：14.0
+[2023-02-28 21:01:02.895] INFO [12408] - 變更訂單數量：0
+[2023-02-28 21:01:04.790] INFO [12408] - 變更配送商：3.0
+[2023-02-28 21:01:04.793] INFO [12408] - 變更訂單數量：48
+[2023-02-28 21:01:04.835] INFO [12408] - Order Distribution Status Statistics
+[2023-02-28 21:01:04.838] INFO [12408] - 4.0:0.0
+[2023-02-28 21:01:04.844] INFO [12408] - 1.0:2.0
+[2023-02-28 21:01:04.848] INFO [12408] - 7.0:3.0
+[2023-02-28 21:01:04.857] INFO [12408] - 6.0:0.0
+[2023-02-28 21:01:04.859] INFO [12408] - 2.0:60.0
+[2023-02-28 21:01:04.862] INFO [12408] - 14.0:0.0
+[2023-02-28 21:01:04.866] INFO [12408] - 3.0:131.0
+[2023-02-28 21:01:04.869] INFO [12408] - 9.0:0.0
+[2023-02-28 21:01:04.872] INFO [12408] - rule-based最適配送商演算法計算完成
+[2023-02-28 21:01:04.899] INFO [12408] - steps in db manager
+[2023-02-28 21:01:04.901] INFO [12408] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 21:01:04.922] INFO [12408] - steps in db manager
+[2023-02-28 21:01:04.925] INFO [12408] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 21:14:19.785] INFO [12408] - Start to write the result to database
+[2023-02-28 21:14:20.826] INFO [12408] - Finish writing the result to database
+[2023-02-28 21:14:20.832] INFO [12408] - rule-based and GA result
+[2023-02-28 21:14:20.839] INFO [12408] -          BATCH_NO        ORDER_NO EST_DISTR_TYPE_ID  EST_DISTR_TYPE_ID(GA_result) REMARK
+0    202209230645  S2022092310295                 9                             9       
+1    202209230645  S2022092310296                 9                             9       
+2    202209230645  S2022092310297                 9                             8       
+3    202209230645  S2022092310298                 9                             9       
+4    202209230645  S2022092310304                 9                            18       
+..            ...             ...               ...                           ...    ...
+174  202209230645  S2022092310833                 8                             8       
+175  202209230645  S2022092310836                 8                             8       
+176  202209230645  S2022092310841                 8                             8       
+177  202209230645  S2022092310845                 8                             8       
+178  202209230645  S2022092310846                 8                             8       
+
+[179 rows x 5 columns]
+[2023-02-28 21:17:05.864] INFO [11404] - DMS呼叫演算法計算對應訂單批號配送商
+[2023-02-28 21:17:05.938] INFO [11404] - steps in db manager
+[2023-02-28 21:17:05.941] INFO [11404] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 21:17:05.955] INFO [11404] - steps in db manager
+[2023-02-28 21:17:05.957] INFO [11404] - message : conduct the sql => SELECT * FROM HOLIDAY
+[2023-02-28 21:17:05.972] INFO [11404] - steps in db manager
+[2023-02-28 21:17:05.974] INFO [11404] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 21:17:06.106] INFO [11404] - steps in db manager
+[2023-02-28 21:17:06.110] INFO [11404] - message : conduct the sql => EXEC DISTR_INFO
+[2023-02-28 21:17:06.123] INFO [11404] - steps in db manager
+[2023-02-28 21:17:06.125] INFO [11404] - message : conduct the sql => EXEC SHIPPER_INFO
+[2023-02-28 21:17:06.162] INFO [11404] - steps in db manager
+[2023-02-28 21:17:06.164] INFO [11404] - message : conduct the sql => SELECT * FROM ORDER_M WHERE BATCH_NO = '202209230645' AND RESEND_FLAG = 'Y'
+[2023-02-28 21:17:06.186] INFO [11404] - steps in db manager
+[2023-02-28 21:17:06.189] INFO [11404] - message : conduct the sql => SELECT *FROM ORDER_M WHERE CREATE_DT BETWEEN DATEADD(mm, DATEDIFF(mm,0,getdate()), 0) AND DATEADD(mm, 1, DATEADD(dd, -1, DATEADD(mm, DATEDIFF(mm,0,getdate()), 0)))
+[2023-02-28 21:17:06.713] INFO [11404] - steps in db manager
+[2023-02-28 21:17:06.717] INFO [11404] - message : conduct the sql => SELECT * FROM ORDER_D_EST_PACK
+[2023-02-28 21:17:07.791] INFO [11404] - Finish loading order information from DB
+[2023-02-28 21:17:07.795] INFO [11404] - Start to shipper condition judgment
+[2023-02-28 21:17:09.453] INFO [11404] - Complete the basic field data capture
+[2023-02-28 21:17:09.514] INFO [11404] - Start Holiday Table Calculation
+[2023-02-28 21:17:09.591] INFO [11404] - Start filter out eligible distributors
+[2023-02-28 21:17:11.398] INFO [11404] - Choose a distributor by the lowest cost
+[2023-02-28 21:17:15.671] INFO [11404] - Start adjusting the ratio of carriers
+[2023-02-28 21:17:15.805] INFO [11404] - 變更配送商：4.0
+[2023-02-28 21:17:15.808] INFO [11404] - 變更訂單數量：0
+[2023-02-28 21:17:15.826] INFO [11404] - 變更配送商：1.0
+[2023-02-28 21:17:15.829] INFO [11404] - 變更訂單數量：0
+[2023-02-28 21:17:15.845] INFO [11404] - 變更配送商：7.0
+[2023-02-28 21:17:15.856] INFO [11404] - 變更訂單數量：0
+[2023-02-28 21:17:15.883] INFO [11404] - 變更配送商：6.0
+[2023-02-28 21:17:15.888] INFO [11404] - 變更訂單數量：0
+[2023-02-28 21:17:15.911] INFO [11404] - 變更配送商：14.0
+[2023-02-28 21:17:15.916] INFO [11404] - 變更訂單數量：0
+[2023-02-28 21:17:17.984] INFO [11404] - 變更配送商：3.0
+[2023-02-28 21:17:17.987] INFO [11404] - 變更訂單數量：48
+[2023-02-28 21:17:18.018] INFO [11404] - Order Distribution Status Statistics
+[2023-02-28 21:17:18.023] INFO [11404] - 4.0:0.0
+[2023-02-28 21:17:18.028] INFO [11404] - 1.0:2.0
+[2023-02-28 21:17:18.060] INFO [11404] - 7.0:3.0
+[2023-02-28 21:17:18.065] INFO [11404] - 6.0:0.0
+[2023-02-28 21:17:18.069] INFO [11404] - 2.0:60.0
+[2023-02-28 21:17:18.072] INFO [11404] - 14.0:0.0
+[2023-02-28 21:17:18.080] INFO [11404] - 3.0:131.0
+[2023-02-28 21:17:18.084] INFO [11404] - 9.0:0.0
+[2023-02-28 21:17:18.088] INFO [11404] - rule-based最適配送商演算法計算完成
+[2023-02-28 21:17:18.127] INFO [11404] - steps in db manager
+[2023-02-28 21:17:18.128] INFO [11404] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 21:17:18.148] INFO [11404] - steps in db manager
+[2023-02-28 21:17:18.149] INFO [11404] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 21:37:25.622] INFO [11404] - Start to write the result to database
+[2023-02-28 21:37:26.443] INFO [11404] - Finish writing the result to database
+[2023-02-28 21:37:26.448] INFO [11404] - rule-based and GA result
+[2023-02-28 21:37:26.453] INFO [11404] -          BATCH_NO        ORDER_NO EST_DISTR_TYPE_ID  EST_DISTR_TYPE_ID(GA_result) REMARK
+0    202209230645  S2022092310295                 9                             1       
+1    202209230645  S2022092310296                 9                            18       
+2    202209230645  S2022092310297                 9                            18       
+3    202209230645  S2022092310298                 9                             9       
+4    202209230645  S2022092310304                 9                             1       
+..            ...             ...               ...                           ...    ...
+174  202209230645  S2022092310833                 8                             8       
+175  202209230645  S2022092310836                 8                             8       
+176  202209230645  S2022092310841                 8                             8       
+177  202209230645  S2022092310845                 8                             8       
+178  202209230645  S2022092310846                 8                             8       
+
+[179 rows x 5 columns]
+[2023-02-28 21:50:31.428] INFO [24720] - DMS呼叫演算法計算對應訂單批號配送商
+[2023-02-28 21:50:31.509] INFO [24720] - steps in db manager
+[2023-02-28 21:50:31.511] INFO [24720] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 21:50:31.521] INFO [24720] - steps in db manager
+[2023-02-28 21:50:31.523] INFO [24720] - message : conduct the sql => SELECT * FROM HOLIDAY
+[2023-02-28 21:50:31.533] INFO [24720] - steps in db manager
+[2023-02-28 21:50:31.534] INFO [24720] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 21:50:31.650] INFO [24720] - steps in db manager
+[2023-02-28 21:50:31.655] INFO [24720] - message : conduct the sql => EXEC DISTR_INFO
+[2023-02-28 21:50:31.685] INFO [24720] - steps in db manager
+[2023-02-28 21:50:31.687] INFO [24720] - message : conduct the sql => EXEC SHIPPER_INFO
+[2023-02-28 21:50:31.722] INFO [24720] - steps in db manager
+[2023-02-28 21:50:31.724] INFO [24720] - message : conduct the sql => SELECT * FROM ORDER_M WHERE BATCH_NO = '202209230645' AND RESEND_FLAG = 'Y'
+[2023-02-28 21:50:31.745] INFO [24720] - steps in db manager
+[2023-02-28 21:50:31.747] INFO [24720] - message : conduct the sql => SELECT *FROM ORDER_M WHERE CREATE_DT BETWEEN DATEADD(mm, DATEDIFF(mm,0,getdate()), 0) AND DATEADD(mm, 1, DATEADD(dd, -1, DATEADD(mm, DATEDIFF(mm,0,getdate()), 0)))
+[2023-02-28 21:50:32.204] INFO [24720] - steps in db manager
+[2023-02-28 21:50:32.209] INFO [24720] - message : conduct the sql => SELECT * FROM ORDER_D_EST_PACK
+[2023-02-28 21:50:33.081] INFO [24720] - Finish loading order information from DB
+[2023-02-28 21:50:33.083] INFO [24720] - Start to shipper condition judgment
+[2023-02-28 21:50:34.434] INFO [24720] - Complete the basic field data capture
+[2023-02-28 21:50:34.440] INFO [24720] - Start Holiday Table Calculation
+[2023-02-28 21:50:34.475] INFO [24720] - Start filter out eligible distributors
+[2023-02-28 21:50:36.104] INFO [24720] - Choose a distributor by the lowest cost
+[2023-02-28 21:50:39.696] INFO [24720] - Start adjusting the ratio of carriers
+[2023-02-28 21:50:39.833] INFO [24720] - 變更配送商：4.0
+[2023-02-28 21:50:39.837] INFO [24720] - 變更訂單數量：0
+[2023-02-28 21:50:39.858] INFO [24720] - 變更配送商：1.0
+[2023-02-28 21:50:39.864] INFO [24720] - 變更訂單數量：0
+[2023-02-28 21:50:39.889] INFO [24720] - 變更配送商：7.0
+[2023-02-28 21:50:39.895] INFO [24720] - 變更訂單數量：0
+[2023-02-28 21:50:39.918] INFO [24720] - 變更配送商：6.0
+[2023-02-28 21:50:39.921] INFO [24720] - 變更訂單數量：0
+[2023-02-28 21:50:39.945] INFO [24720] - 變更配送商：14.0
+[2023-02-28 21:50:39.949] INFO [24720] - 變更訂單數量：0
+[2023-02-28 21:50:41.901] INFO [24720] - 變更配送商：3.0
+[2023-02-28 21:50:41.908] INFO [24720] - 變更訂單數量：48
+[2023-02-28 21:50:41.928] INFO [24720] - Order Distribution Status Statistics
+[2023-02-28 21:50:41.931] INFO [24720] - 4.0:0.0
+[2023-02-28 21:50:41.935] INFO [24720] - 1.0:2.0
+[2023-02-28 21:50:41.940] INFO [24720] - 7.0:3.0
+[2023-02-28 21:50:41.944] INFO [24720] - 6.0:0.0
+[2023-02-28 21:50:41.953] INFO [24720] - 2.0:60.0
+[2023-02-28 21:50:41.957] INFO [24720] - 14.0:0.0
+[2023-02-28 21:50:41.959] INFO [24720] - 3.0:131.0
+[2023-02-28 21:50:41.962] INFO [24720] - 9.0:0.0
+[2023-02-28 21:50:41.966] INFO [24720] - rule-based最適配送商演算法計算完成
+[2023-02-28 21:50:42.009] INFO [24720] - steps in db manager
+[2023-02-28 21:50:42.011] INFO [24720] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 21:50:42.031] INFO [24720] - steps in db manager
+[2023-02-28 21:50:42.033] INFO [24720] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 21:55:19.580] INFO [24720] - Start to write the result to database
+[2023-02-28 21:55:20.703] INFO [24720] - Finish writing the result to database
+[2023-02-28 21:55:20.715] INFO [24720] - rule-based and GA result
+[2023-02-28 21:55:20.719] INFO [24720] -          BATCH_NO        ORDER_NO EST_DISTR_TYPE_ID  EST_DISTR_TYPE_ID(GA_result) REMARK
+0    202209230645  S2022092310295                 9                             8       
+1    202209230645  S2022092310296                 9                             1       
+2    202209230645  S2022092310297                 9                             9       
+3    202209230645  S2022092310298                 9                            18       
+4    202209230645  S2022092310304                 9                             9       
+..            ...             ...               ...                           ...    ...
+174  202209230645  S2022092310833                 8                            18       
+175  202209230645  S2022092310836                 8                             8       
+176  202209230645  S2022092310841                 8                             8       
+177  202209230645  S2022092310845                 8                             1       
+178  202209230645  S2022092310846                 8                             8       
+
+[179 rows x 5 columns]
+[2023-02-28 21:58:16.393] INFO [15076] - DMS呼叫演算法計算對應訂單批號配送商
+[2023-02-28 21:58:16.414] INFO [15076] - steps in db manager
+[2023-02-28 21:58:16.416] INFO [15076] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 21:58:16.423] INFO [15076] - steps in db manager
+[2023-02-28 21:58:16.425] INFO [15076] - message : conduct the sql => SELECT * FROM HOLIDAY
+[2023-02-28 21:58:16.432] INFO [15076] - steps in db manager
+[2023-02-28 21:58:16.433] INFO [15076] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 21:58:16.531] INFO [15076] - steps in db manager
+[2023-02-28 21:58:16.533] INFO [15076] - message : conduct the sql => EXEC DISTR_INFO
+[2023-02-28 21:58:16.545] INFO [15076] - steps in db manager
+[2023-02-28 21:58:16.547] INFO [15076] - message : conduct the sql => EXEC SHIPPER_INFO
+[2023-02-28 21:58:16.580] INFO [15076] - steps in db manager
+[2023-02-28 21:58:16.582] INFO [15076] - message : conduct the sql => SELECT * FROM ORDER_M WHERE BATCH_NO = '202209230645' AND RESEND_FLAG = 'Y'
+[2023-02-28 21:58:16.607] INFO [15076] - steps in db manager
+[2023-02-28 21:58:16.609] INFO [15076] - message : conduct the sql => SELECT *FROM ORDER_M WHERE CREATE_DT BETWEEN DATEADD(mm, DATEDIFF(mm,0,getdate()), 0) AND DATEADD(mm, 1, DATEADD(dd, -1, DATEADD(mm, DATEDIFF(mm,0,getdate()), 0)))
+[2023-02-28 21:58:17.057] INFO [15076] - steps in db manager
+[2023-02-28 21:58:17.059] INFO [15076] - message : conduct the sql => SELECT * FROM ORDER_D_EST_PACK
+[2023-02-28 21:58:17.989] INFO [15076] - Finish loading order information from DB
+[2023-02-28 21:58:17.994] INFO [15076] - Start to shipper condition judgment
+[2023-02-28 21:58:19.309] INFO [15076] - Complete the basic field data capture
+[2023-02-28 21:58:19.318] INFO [15076] - Start Holiday Table Calculation
+[2023-02-28 21:58:19.352] INFO [15076] - Start filter out eligible distributors
+[2023-02-28 21:58:20.839] INFO [15076] - Choose a distributor by the lowest cost
+[2023-02-28 21:58:24.643] INFO [15076] - Start adjusting the ratio of carriers
+[2023-02-28 21:58:24.773] INFO [15076] - 變更配送商：4.0
+[2023-02-28 21:58:24.779] INFO [15076] - 變更訂單數量：0
+[2023-02-28 21:58:24.799] INFO [15076] - 變更配送商：1.0
+[2023-02-28 21:58:24.803] INFO [15076] - 變更訂單數量：0
+[2023-02-28 21:58:24.828] INFO [15076] - 變更配送商：7.0
+[2023-02-28 21:58:24.831] INFO [15076] - 變更訂單數量：0
+[2023-02-28 21:58:24.850] INFO [15076] - 變更配送商：6.0
+[2023-02-28 21:58:24.856] INFO [15076] - 變更訂單數量：0
+[2023-02-28 21:58:24.880] INFO [15076] - 變更配送商：14.0
+[2023-02-28 21:58:24.882] INFO [15076] - 變更訂單數量：0
+[2023-02-28 21:58:26.786] INFO [15076] - 變更配送商：3.0
+[2023-02-28 21:58:26.794] INFO [15076] - 變更訂單數量：48
+[2023-02-28 21:58:26.817] INFO [15076] - Order Distribution Status Statistics
+[2023-02-28 21:58:26.823] INFO [15076] - 4.0:0.0
+[2023-02-28 21:58:26.827] INFO [15076] - 1.0:2.0
+[2023-02-28 21:58:26.829] INFO [15076] - 7.0:3.0
+[2023-02-28 21:58:26.833] INFO [15076] - 6.0:0.0
+[2023-02-28 21:58:26.838] INFO [15076] - 2.0:60.0
+[2023-02-28 21:58:26.842] INFO [15076] - 14.0:0.0
+[2023-02-28 21:58:26.845] INFO [15076] - 3.0:131.0
+[2023-02-28 21:58:26.848] INFO [15076] - 9.0:0.0
+[2023-02-28 21:58:26.850] INFO [15076] - rule-based最適配送商演算法計算完成
+[2023-02-28 21:58:26.891] INFO [15076] - steps in db manager
+[2023-02-28 21:58:26.893] INFO [15076] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 21:58:26.911] INFO [15076] - steps in db manager
+[2023-02-28 21:58:26.915] INFO [15076] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 22:08:17.726] INFO [15076] - Start to write the result to database
+[2023-02-28 22:08:18.869] INFO [15076] - Finish writing the result to database
+[2023-02-28 22:08:18.874] INFO [15076] - rule-based and GA result
+[2023-02-28 22:08:18.878] INFO [15076] -          BATCH_NO        ORDER_NO EST_DISTR_TYPE_ID  EST_DISTR_TYPE_ID(GA_result) REMARK
+0    202209230645  S2022092310295                 9                             9       
+1    202209230645  S2022092310296                 9                            18       
+2    202209230645  S2022092310297                 9                             9       
+3    202209230645  S2022092310298                 9                             9       
+4    202209230645  S2022092310304                 9                             1       
+..            ...             ...               ...                           ...    ...
+174  202209230645  S2022092310833                 8                             8       
+175  202209230645  S2022092310836                 8                             8       
+176  202209230645  S2022092310841                 8                             8       
+177  202209230645  S2022092310845                 8                             8       
+178  202209230645  S2022092310846                 8                             8       
+
+[179 rows x 5 columns]
+[2023-02-28 22:11:50.363] INFO [21404] - DMS呼叫演算法計算對應訂單批號配送商
+[2023-02-28 22:11:50.798] INFO [21404] - steps in db manager
+[2023-02-28 22:11:50.802] INFO [21404] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 22:11:50.821] INFO [21404] - steps in db manager
+[2023-02-28 22:11:50.823] INFO [21404] - message : conduct the sql => SELECT * FROM HOLIDAY
+[2023-02-28 22:11:50.832] INFO [21404] - steps in db manager
+[2023-02-28 22:11:50.833] INFO [21404] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 22:11:51.239] INFO [21404] - steps in db manager
+[2023-02-28 22:11:51.241] INFO [21404] - message : conduct the sql => EXEC DISTR_INFO
+[2023-02-28 22:11:51.318] INFO [21404] - steps in db manager
+[2023-02-28 22:11:51.324] INFO [21404] - message : conduct the sql => EXEC SHIPPER_INFO
+[2023-02-28 22:11:51.411] INFO [21404] - steps in db manager
+[2023-02-28 22:11:51.414] INFO [21404] - message : conduct the sql => SELECT * FROM ORDER_M WHERE BATCH_NO = '202209230645' AND RESEND_FLAG = 'Y'
+[2023-02-28 22:11:51.444] INFO [21404] - steps in db manager
+[2023-02-28 22:11:51.447] INFO [21404] - message : conduct the sql => SELECT *FROM ORDER_M WHERE CREATE_DT BETWEEN DATEADD(mm, DATEDIFF(mm,0,getdate()), 0) AND DATEADD(mm, 1, DATEADD(dd, -1, DATEADD(mm, DATEDIFF(mm,0,getdate()), 0)))
+[2023-02-28 22:11:51.944] INFO [21404] - steps in db manager
+[2023-02-28 22:11:51.945] INFO [21404] - message : conduct the sql => SELECT * FROM ORDER_D_EST_PACK
+[2023-02-28 22:11:52.795] INFO [21404] - Finish loading order information from DB
+[2023-02-28 22:11:52.801] INFO [21404] - Start to shipper condition judgment
+[2023-02-28 22:11:54.079] INFO [21404] - Complete the basic field data capture
+[2023-02-28 22:11:54.084] INFO [21404] - Start Holiday Table Calculation
+[2023-02-28 22:11:54.121] INFO [21404] - Start filter out eligible distributors
+[2023-02-28 22:11:55.288] INFO [21404] - Choose a distributor by the lowest cost
+[2023-02-28 22:11:59.711] INFO [21404] - Start adjusting the ratio of carriers
+[2023-02-28 22:11:59.836] INFO [21404] - 變更配送商：4.0
+[2023-02-28 22:11:59.842] INFO [21404] - 變更訂單數量：0
+[2023-02-28 22:11:59.859] INFO [21404] - 變更配送商：1.0
+[2023-02-28 22:11:59.861] INFO [21404] - 變更訂單數量：0
+[2023-02-28 22:11:59.878] INFO [21404] - 變更配送商：7.0
+[2023-02-28 22:11:59.881] INFO [21404] - 變更訂單數量：0
+[2023-02-28 22:11:59.910] INFO [21404] - 變更配送商：6.0
+[2023-02-28 22:11:59.920] INFO [21404] - 變更訂單數量：0
+[2023-02-28 22:11:59.958] INFO [21404] - 變更配送商：14.0
+[2023-02-28 22:11:59.961] INFO [21404] - 變更訂單數量：0
+[2023-02-28 22:12:01.773] INFO [21404] - 變更配送商：3.0
+[2023-02-28 22:12:01.774] INFO [21404] - 變更訂單數量：48
+[2023-02-28 22:12:01.797] INFO [21404] - Order Distribution Status Statistics
+[2023-02-28 22:12:01.803] INFO [21404] - 4.0:0.0
+[2023-02-28 22:12:01.806] INFO [21404] - 1.0:2.0
+[2023-02-28 22:12:01.809] INFO [21404] - 7.0:3.0
+[2023-02-28 22:12:01.813] INFO [21404] - 6.0:0.0
+[2023-02-28 22:12:01.819] INFO [21404] - 2.0:60.0
+[2023-02-28 22:12:01.822] INFO [21404] - 14.0:0.0
+[2023-02-28 22:12:01.826] INFO [21404] - 3.0:131.0
+[2023-02-28 22:12:01.833] INFO [21404] - 9.0:0.0
+[2023-02-28 22:12:01.835] INFO [21404] - rule-based最適配送商演算法計算完成
+[2023-02-28 22:12:01.874] INFO [21404] - steps in db manager
+[2023-02-28 22:12:01.876] INFO [21404] - message : conduct the sql => EXEC DISTR_FEE_INFO
+[2023-02-28 22:12:01.896] INFO [21404] - steps in db manager
+[2023-02-28 22:12:01.898] INFO [21404] - message : conduct the sql => SELECT * FROM DISTR_M
+[2023-02-28 22:27:05.204] INFO [21404] - Start to write the result to database
+[2023-02-28 22:27:06.042] INFO [21404] - Finish writing the result to database
+[2023-02-28 22:27:06.046] INFO [21404] - rule-based and GA result
+[2023-02-28 22:27:06.051] INFO [21404] -          BATCH_NO        ORDER_NO EST_DISTR_TYPE_ID  EST_DISTR_TYPE_ID(GA_result) REMARK
+0    202209230645  S2022092310295                 9                            18       
+1    202209230645  S2022092310296                 9                             1       
+2    202209230645  S2022092310297                 9                             8       
+3    202209230645  S2022092310298                 9                             9       
+4    202209230645  S2022092310304                 9                             8       
+..            ...             ...               ...                           ...    ...
+174  202209230645  S2022092310833                 8                             8       
+175  202209230645  S2022092310836                 8                             8       
+176  202209230645  S2022092310841                 8                             8       
+177  202209230645  S2022092310845                 8                            18       
+178  202209230645  S2022092310846                 8                             8       
+
+[179 rows x 5 columns]

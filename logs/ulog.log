@@ -1,0 +1,90 @@
+2023-02-01 21:18:45,877 - [32mINFO[0m:     Started server process [[36m11844[0m]
+2023-02-01 21:18:45,877 - [32mINFO[0m:     Started server process [[36m11844[0m]
+2023-02-01 21:18:45,881 - [32mINFO[0m:     Waiting for application startup.
+2023-02-01 21:18:45,881 - [32mINFO[0m:     Waiting for application startup.
+2023-02-01 21:18:45,885 - [32mINFO[0m:     Application startup complete.
+2023-02-01 21:18:45,885 - [32mINFO[0m:     Application startup complete.
+2023-02-01 21:18:45,888 - [32mINFO[0m:     Uvicorn running on [1mhttp://0.0.0.0:8080[0m (Press CTRL+C to quit)
+2023-02-01 21:18:45,888 - [32mINFO[0m:     Uvicorn running on [1mhttp://0.0.0.0:8080[0m (Press CTRL+C to quit)
+2023-02-01 21:19:32,668 - [32mINFO[0m:     10.71.253.134:54015 - "POST /api/addBatchNo HTTP/1.1" 200
+2023-02-01 22:28:47,779 - [32mINFO[0m:     10.71.253.134:54280 - "POST /api/addBatchNo HTTP/1.1" 200
+2023-02-01 22:39:52,881 - [32mINFO[0m:     10.71.253.134:54348 - "POST /api/addBatchNo HTTP/1.1" 200
+2023-02-01 22:42:11,598 - [32mINFO[0m:     10.71.253.134:54393 - "POST /api/addBatchNo HTTP/1.1" 200
+2023-02-01 22:43:59,288 - [32mINFO[0m:     10.71.253.134:54440 - "POST /api/addBatchNo HTTP/1.1" 200
+2023-02-01 22:45:52,546 - [32mINFO[0m:     10.71.253.134:54500 - "POST /api/addBatchNo HTTP/1.1" 200
+2023-02-01 22:46:42,218 - [32mINFO[0m:     Shutting down
+2023-02-01 22:46:42,218 - [32mINFO[0m:     Shutting down
+2023-02-01 22:46:42,326 - [32mINFO[0m:     Waiting for application shutdown.
+2023-02-01 22:46:42,326 - [32mINFO[0m:     Waiting for application shutdown.
+2023-02-01 22:46:42,337 - [32mINFO[0m:     Application shutdown complete.
+2023-02-01 22:46:42,337 - [32mINFO[0m:     Application shutdown complete.
+2023-02-01 22:46:42,341 - [32mINFO[0m:     Finished server process [[36m11844[0m]
+2023-02-01 22:46:42,341 - [32mINFO[0m:     Finished server process [[36m11844[0m]
+2023-02-01 22:47:03,593 - [32mINFO[0m:     Started server process [[36m16244[0m]
+2023-02-01 22:47:03,593 - [32mINFO[0m:     Started server process [[36m16244[0m]
+2023-02-01 22:47:12,131 - [32mINFO[0m:     Waiting for application startup.
+2023-02-01 22:47:12,131 - [32mINFO[0m:     Waiting for application startup.
+2023-02-01 22:47:12,135 - [32mINFO[0m:     Application startup complete.
+2023-02-01 22:47:12,135 - [32mINFO[0m:     Application startup complete.
+2023-02-01 22:47:12,140 - [32mINFO[0m:     Uvicorn running on [1mhttp://0.0.0.0:8080[0m (Press CTRL+C to quit)
+2023-02-01 22:47:12,140 - [32mINFO[0m:     Uvicorn running on [1mhttp://0.0.0.0:8080[0m (Press CTRL+C to quit)
+2023-02-01 22:47:21,943 - [32mINFO[0m:     10.71.253.134:54542 - "POST /api/addBatchNo HTTP/1.1" 200
+2023-02-01 22:47:58,528 - [32mINFO[0m:     Shutting down
+2023-02-01 22:47:58,528 - [32mINFO[0m:     Shutting down
+2023-02-01 22:47:58,635 - [32mINFO[0m:     Waiting for background tasks to complete. (CTRL+C to force quit)
+2023-02-01 22:47:58,635 - [32mINFO[0m:     Waiting for background tasks to complete. (CTRL+C to force quit)
+2023-02-01 22:48:00,882 - [32mINFO[0m:     Finished server process [[36m16244[0m]
+2023-02-01 22:48:00,882 - [32mINFO[0m:     Finished server process [[36m16244[0m]
+2023-02-01 22:48:00,976 - [31mERROR[0m:    Traceback (most recent call last):
+  File "D:\Anaconda3\envs\arcoa\lib\site-packages\starlette\routing.py", line 674, in lifespan
+    await receive()
+  File "D:\Anaconda3\envs\arcoa\lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+  File "D:\Anaconda3\envs\arcoa\lib\asyncio\queues.py", line 166, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+2023-02-01 22:48:00,976 - [31mERROR[0m:    Traceback (most recent call last):
+  File "D:\Anaconda3\envs\arcoa\lib\site-packages\starlette\routing.py", line 674, in lifespan
+    await receive()
+  File "D:\Anaconda3\envs\arcoa\lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+  File "D:\Anaconda3\envs\arcoa\lib\asyncio\queues.py", line 166, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+2023-02-01 22:50:10,886 - [32mINFO[0m:     Started server process [[36m10736[0m]
+2023-02-01 22:50:10,886 - [32mINFO[0m:     Started server process [[36m10736[0m]
+2023-02-01 22:50:10,889 - [32mINFO[0m:     Waiting for application startup.
+2023-02-01 22:50:10,889 - [32mINFO[0m:     Waiting for application startup.
+2023-02-01 22:50:10,891 - [32mINFO[0m:     Application startup complete.
+2023-02-01 22:50:10,891 - [32mINFO[0m:     Application startup complete.
+2023-02-01 22:50:10,895 - [32mINFO[0m:     Uvicorn running on [1mhttp://0.0.0.0:8080[0m (Press CTRL+C to quit)
+2023-02-01 22:50:10,895 - [32mINFO[0m:     Uvicorn running on [1mhttp://0.0.0.0:8080[0m (Press CTRL+C to quit)
+2023-02-01 22:50:29,856 - [32mINFO[0m:     10.71.253.134:54596 - "POST /api/addBatchNo HTTP/1.1" 200
+2023-02-01 22:53:54,471 - [32mINFO[0m:     10.71.253.134:54640 - "POST /api/addBatchNo HTTP/1.1" 200
+2023-02-01 22:56:13,379 - [32mINFO[0m:     Shutting down
+2023-02-01 22:56:13,379 - [32mINFO[0m:     Shutting down
+2023-02-01 22:56:13,490 - [32mINFO[0m:     Waiting for application shutdown.
+2023-02-01 22:56:13,490 - [32mINFO[0m:     Waiting for application shutdown.
+2023-02-01 22:56:13,494 - [32mINFO[0m:     Application shutdown complete.
+2023-02-01 22:56:13,494 - [32mINFO[0m:     Application shutdown complete.
+2023-02-01 22:56:13,497 - [32mINFO[0m:     Finished server process [[36m10736[0m]
+2023-02-01 22:56:13,497 - [32mINFO[0m:     Finished server process [[36m10736[0m]
+2023-02-01 23:42:27,896 - [32mINFO[0m:     Started server process [[36m11872[0m]
+2023-02-01 23:42:27,896 - [32mINFO[0m:     Started server process [[36m11872[0m]
+2023-02-01 23:42:27,899 - [32mINFO[0m:     Waiting for application startup.
+2023-02-01 23:42:27,899 - [32mINFO[0m:     Waiting for application startup.
+2023-02-01 23:42:27,904 - [32mINFO[0m:     Application startup complete.
+2023-02-01 23:42:27,904 - [32mINFO[0m:     Application startup complete.
+2023-02-01 23:42:27,907 - [32mINFO[0m:     Uvicorn running on [1mhttp://0.0.0.0:8080[0m (Press CTRL+C to quit)
+2023-02-01 23:42:27,907 - [32mINFO[0m:     Uvicorn running on [1mhttp://0.0.0.0:8080[0m (Press CTRL+C to quit)
+2023-02-01 23:42:36,318 - [32mINFO[0m:     10.71.253.134:54968 - "POST /api/addBatchNo HTTP/1.1" 200
+2023-02-02 00:06:15,414 - [32mINFO[0m:     Shutting down
+2023-02-02 00:06:15,414 - [32mINFO[0m:     Shutting down
+2023-02-02 00:06:15,519 - [32mINFO[0m:     Waiting for application shutdown.
+2023-02-02 00:06:15,519 - [32mINFO[0m:     Waiting for application shutdown.
+2023-02-02 00:06:15,524 - [32mINFO[0m:     Application shutdown complete.
+2023-02-02 00:06:15,524 - [32mINFO[0m:     Application shutdown complete.
+2023-02-02 00:06:15,527 - [32mINFO[0m:     Finished server process [[36m11872[0m]
+2023-02-02 00:06:15,527 - [32mINFO[0m:     Finished server process [[36m11872[0m]

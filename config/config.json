@@ -1,0 +1,19 @@
+﻿{
+"db_connect":{
+	"creator": "pymssql",
+	"host": "10.71.253.162",
+	"port": 1433,
+	"user": "dmsai",
+	"password": "tpcKV2@U",
+	"charset": "utf8",
+	"database": "DMS",
+	"maxconnections": 10
+	},
+"islands" : [880,882,884,881,883,885,890,892,894,891,893,896,209,211,210,212,817,819,818,952,929,951],
+"GA_hyperparameter" : {
+	"pop_size": 50,
+	"epoch": 10,
+	"iteration": 25
+	},
+"running_time" : 80
+}
